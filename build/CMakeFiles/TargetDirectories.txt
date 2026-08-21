@@ -1,0 +1,3 @@
+/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build/CMakeFiles/lingshui_window.dir
+/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build/CMakeFiles/edit_cache.dir
+/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build/CMakeFiles/rebuild_cache.dir

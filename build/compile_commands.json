@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build",
+  "command": "/usr/bin/cc  -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/external  -o CMakeFiles/lingshui_window.dir/src/glad.c.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/glad.c",
+  "file": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/glad.c",
+  "output": "CMakeFiles/lingshui_window.dir/src/glad.c.o"
+},
+{
+  "directory": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build",
+  "command": "/usr/bin/c++  -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/external -std=gnu++17 -o CMakeFiles/lingshui_window.dir/src/main.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/main.cpp",
+  "file": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/main.cpp",
+  "output": "CMakeFiles/lingshui_window.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build",
+  "command": "/usr/bin/c++  -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/external -std=gnu++17 -o CMakeFiles/lingshui_window.dir/src/singleton/st_gl.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/singleton/st_gl.cpp",
+  "file": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/singleton/st_gl.cpp",
+  "output": "CMakeFiles/lingshui_window.dir/src/singleton/st_gl.cpp.o"
+}
+]
