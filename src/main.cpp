@@ -52,17 +52,15 @@ int main() {
     openGL();
 
     GLFWwindow* win = G_C_gl->get_window();
-
-    DtoSubMesh sb_mesh;
-    sb_mesh.raw_vertices = std::vector<GLfloat>({
-        -0.5f, -0.5f,
-        0.5f, -0.5f,
-        0.5f, 0.5f,
-        -0.5f, 0.5f
-    });
     
-    DtoInitSignatureMesh sg_mesh;
-    sg_mesh.mesh = sb_mesh;
+    DtoSubMesh sg_mesh;
+    sg_mesh.x = 0.f;
+    sg_mesh.y = 0.f;
+    sg_mesh.w = 0.5f;
+    sg_mesh.h = 0.5f;
+    sg_mesh.color = std::vector<float>{
+        1.0f, 0.75f, 0.8f, 1.0f
+    };
 
     SIGNATURE_mesh *obj = new SIGNATURE_mesh(sg_mesh);
     

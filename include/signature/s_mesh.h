@@ -7,7 +7,7 @@
 
 class SIGNATURE_mesh {
     public:
-        SIGNATURE_mesh(DtoInitSignatureMesh init);
+        SIGNATURE_mesh(DtoSubMesh init);
         ~SIGNATURE_mesh();
         
         GLuint get_VAO();
@@ -28,9 +28,12 @@ class SIGNATURE_mesh {
         void init_shader_buffer();
         
         void calculate_ebo();
+        void calculate_count_of_attribute();
         void gpu_base_smart();
-
+        
         void display();
+        void color_draw();
+        
         void execute();
 
     private:

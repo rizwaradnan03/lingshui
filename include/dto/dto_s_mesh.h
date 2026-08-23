@@ -4,19 +4,18 @@
 #include <config/c_pch.h>
 
 struct DtoSubMesh {
-    std::vector<GLfloat> raw_vertices;
+    float x, y, w, h;
+    std::vector<float> color;
 
-    GLfloat vertices[255]; // VERTEX
-    GLfloat indices[255]; // EBO NEEDED
+    uint8_t v_size;
+    uint8_t i_size;
+    std::vector<float> raw_vertices;
+    float vertices[255];
+    uint8_t indices[255];
 
-    // SHADER BUFFER 
     GLuint vertexShader;
     GLuint fragmentShader;
     GLuint shaderProgram;
-};
-
-struct DtoInitSignatureMesh {
-    DtoSubMesh mesh;
 };
 
 #endif
