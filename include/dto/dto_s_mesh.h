@@ -4,10 +4,10 @@
 #include <config/c_pch.h>
 
 struct DtoSubMesh {
-    std::vector<float> raw_vertices;
+    std::vector<GLfloat> raw_vertices;
 
-    GLfloat vertices[]; // VERTEX
-    GLfloat indices[]; // EBO NEEDED
+    GLfloat vertices[255]; // VERTEX
+    GLfloat indices[255]; // EBO NEEDED
 
     // SHADER BUFFER 
     GLuint vertexShader;

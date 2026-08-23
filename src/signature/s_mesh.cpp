@@ -69,6 +69,10 @@ DtoSubMesh& SIGNATURE_mesh::get_mesh(){
     return this->mesh;
 }
 
+void SIGNATURE_mesh::set_mesh(DtoSubMesh value){
+    this->mesh = value;
+}
+
 GLuint SIGNATURE_mesh::get_EBO(){
     return this->EBO;
 }
@@ -93,11 +97,11 @@ void SIGNATURE_mesh::init_shader_buffer(){
     DtoSubMesh& m = this->get_mesh();
 
     m.vertexShader = glCreateShader(GL_VERTEX_SHADER);
-    glShaderSource(m.vertexShader, 1, &vertexShaderSource, NULL);
+    glShaderSource(m.vertexShader, 1, &constant_shader::vertexShaderSource, NULL);
     glCompileShader(m.vertexShader);
 
     m.fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-    glShaderSource(m.fragmentShader, 1, &fragmentShaderSource, NULL);
+    glShaderSource(m.fragmentShader, 1, &constant_shader::fragmentShaderSource, NULL);
     glCompileShader(m.fragmentShader);
 
     m.shaderProgram = glCreateProgram();
@@ -146,4 +150,8 @@ void SIGNATURE_mesh::display(){
     uint8_t sz = m.raw_vertices.size();
     uint8_t ctvb = (sz / 2) + ((sz / 2) / 2);
     glDrawElements(GL_TRIANGLES, ctvb, GL_UNSIGNED_BYTE, 0);
+}
+
+void SIGNATURE_mesh::execute(){
+    this->display();
 }

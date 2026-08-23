@@ -85,12 +85,12 @@ clean: CMakeFiles/lingshui_window.dir/clean
 CMakeFiles/lingshui_window.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build/CMakeFiles --progress-num=1,2,3,4 "Built target lingshui_window"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target lingshui_window"
 .PHONY : CMakeFiles/lingshui_window.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lingshui_window.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lingshui_window.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build/CMakeFiles 0
 .PHONY : CMakeFiles/lingshui_window.dir/rule
@@ -102,7 +102,7 @@ lingshui_window: CMakeFiles/lingshui_window.dir/rule
 # codegen rule for target.
 CMakeFiles/lingshui_window.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target lingshui_window"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target lingshui_window"
 .PHONY : CMakeFiles/lingshui_window.dir/codegen
 
 # clean rule for target.

@@ -7,7 +7,7 @@
 
 class SIGNATURE_mesh {
     public:
-        SIGNATRUE_mesh(DtoInitSignatureMesh init);
+        SIGNATURE_mesh(DtoInitSignatureMesh init);
         ~SIGNATURE_mesh();
         
         GLuint get_VAO();

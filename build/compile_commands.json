@@ -1,6 +1,12 @@
 [
 {
   "directory": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build",
+  "command": "/usr/bin/c++  -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/external -std=gnu++17 -o CMakeFiles/lingshui_window.dir/src/constants/ct_shader.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/constants/ct_shader.cpp",
+  "file": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/constants/ct_shader.cpp",
+  "output": "CMakeFiles/lingshui_window.dir/src/constants/ct_shader.cpp.o"
+},
+{
+  "directory": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build",
   "command": "/usr/bin/cc  -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/external  -o CMakeFiles/lingshui_window.dir/src/glad.c.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/glad.c",
   "file": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/glad.c",
   "output": "CMakeFiles/lingshui_window.dir/src/glad.c.o"
@@ -10,6 +16,12 @@
   "command": "/usr/bin/c++  -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/external -std=gnu++17 -o CMakeFiles/lingshui_window.dir/src/main.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/main.cpp",
   "file": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/main.cpp",
   "output": "CMakeFiles/lingshui_window.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build",
+  "command": "/usr/bin/c++  -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/external -std=gnu++17 -o CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_mesh.cpp",
+  "file": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_mesh.cpp",
+  "output": "CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.o"
 },
 {
   "directory": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build",

@@ -2,8 +2,10 @@ lingshui_window: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o \
+  CMakeFiles/lingshui_window.dir/src/constants/ct_shader.cpp.o \
   CMakeFiles/lingshui_window.dir/src/glad.c.o \
   CMakeFiles/lingshui_window.dir/src/main.cpp.o \
+  CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.o \
   CMakeFiles/lingshui_window.dir/src/singleton/st_gl.cpp.o \
   /usr/lib/libglfw.so.3.5 \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libdl.a \
@@ -55,9 +57,13 @@ lingshui_window: \
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o:
 
+CMakeFiles/lingshui_window.dir/src/constants/ct_shader.cpp.o:
+
 CMakeFiles/lingshui_window.dir/src/glad.c.o:
 
 CMakeFiles/lingshui_window.dir/src/main.cpp.o:
+
+CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.o:
 
 CMakeFiles/lingshui_window.dir/src/singleton/st_gl.cpp.o:
 

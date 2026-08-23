@@ -130,6 +130,30 @@ lingshui_window/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/build
 .PHONY : lingshui_window/fast
 
+src/constants/ct_shader.o: src/constants/ct_shader.cpp.o
+.PHONY : src/constants/ct_shader.o
+
+# target to build an object file
+src/constants/ct_shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/constants/ct_shader.cpp.o
+.PHONY : src/constants/ct_shader.cpp.o
+
+src/constants/ct_shader.i: src/constants/ct_shader.cpp.i
+.PHONY : src/constants/ct_shader.i
+
+# target to preprocess a source file
+src/constants/ct_shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/constants/ct_shader.cpp.i
+.PHONY : src/constants/ct_shader.cpp.i
+
+src/constants/ct_shader.s: src/constants/ct_shader.cpp.s
+.PHONY : src/constants/ct_shader.s
+
+# target to generate assembly for a file
+src/constants/ct_shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/constants/ct_shader.cpp.s
+.PHONY : src/constants/ct_shader.cpp.s
+
 src/glad.o: src/glad.c.o
 .PHONY : src/glad.o
 
@@ -178,6 +202,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/signature/s_mesh.o: src/signature/s_mesh.cpp.o
+.PHONY : src/signature/s_mesh.o
+
+# target to build an object file
+src/signature/s_mesh.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.o
+.PHONY : src/signature/s_mesh.cpp.o
+
+src/signature/s_mesh.i: src/signature/s_mesh.cpp.i
+.PHONY : src/signature/s_mesh.i
+
+# target to preprocess a source file
+src/signature/s_mesh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.i
+.PHONY : src/signature/s_mesh.cpp.i
+
+src/signature/s_mesh.s: src/signature/s_mesh.cpp.s
+.PHONY : src/signature/s_mesh.s
+
+# target to generate assembly for a file
+src/signature/s_mesh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.s
+.PHONY : src/signature/s_mesh.cpp.s
+
 src/singleton/st_gl.o: src/singleton/st_gl.cpp.o
 .PHONY : src/singleton/st_gl.o
 
@@ -211,12 +259,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... lingshui_window"
+	@echo "... src/constants/ct_shader.o"
+	@echo "... src/constants/ct_shader.i"
+	@echo "... src/constants/ct_shader.s"
 	@echo "... src/glad.o"
 	@echo "... src/glad.i"
 	@echo "... src/glad.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/signature/s_mesh.o"
+	@echo "... src/signature/s_mesh.i"
+	@echo "... src/signature/s_mesh.s"
 	@echo "... src/singleton/st_gl.o"
 	@echo "... src/singleton/st_gl.i"
 	@echo "... src/singleton/st_gl.s"
