@@ -4,23 +4,45 @@ SIGNATURE_mesh::SIGNATURE_mesh(DtoSubMesh init){
     DtoSubMesh mesh = init;
 
     float w_half = init.w / 2;
-    float h_half = init.h / 2;
+    float h_half = init.h / 2;    
     
-    mesh.raw_vertices = {
-        init.x - w_half, init.y - h_half,
-        init.x + w_half, init.y - h_half,
-        init.x + w_half, init.y + h_half,
-        init.x - w_half, init.y + h_half
-    };
+    // mesh.raw_vertices = {
+    //     init.x - w_half, init.y - h_half,
+    //     init.x + w_half, init.y - h_half,
+    //     init.x + w_half, init.y + h_half,
+    //     init.x - w_half, init.y + h_half
+    // };
 
-    mesh.v_size = mesh.raw_vertices.size();
-    mesh.i_size = (mesh.v_size / 2) + ((mesh.v_size / 2) / 2);
-    
-    for(uint8_t i = 0; i < mesh.v_size; i++){
-        mesh.vertices[i] = mesh.raw_vertices[i];
+    this->set_mesh(mesh);
+    this->calculate_count_of_attribute();
+
+    DtoSubMesh& m = this->get_mesh();
+
+    uint8_t x_exist = m.i_size;
+    uint8_t y_exist = m.i_size;
+    for(uint16_t i = 0;i < 8;i++){
+        if(i + 2 % 2 == 0){
+            if(x_exist == m.i_size || (x_exist != m.i_size && x_exist + 1 == x_exist / 2)){ // be the negative
+                m.raw_vertices.push_back(m.x - w_half);
+            }else{
+                m.raw_vertices.push_back(m.x + w_half);
+            }
+
+            x_exist -= 1;
+        }else{
+            if(y_exist == m.i_size || (y_exist != m.i_size && y_exist + 1 == y_exist / 2)){
+                m.raw_vertices.push_back(m.y - h_half);
+            }else{
+                m.raw_vertices.push_back(m.y + h_half);
+            }   
+            
+            y_exist -= 1;
+        }
     }
     
-    this->set_mesh(mesh);
+    for(uint8_t i = 0; i < m.v_size; i++){
+        m.vertices[i] = m.raw_vertices[i];
+    }
     
     this->calculate_ebo();
     this->init_shader_buffer();
@@ -143,7 +165,10 @@ void SIGNATURE_mesh::calculate_ebo(){
 }
 
 void SIGNATURE_mesh::calculate_count_of_attribute(){
+    DtoSubMesh& mesh = this->get_mesh();
     
+    mesh.v_size = mesh.raw_vertices.size();
+    mesh.i_size = (mesh.v_size / 2) + ((mesh.v_size / 2) / 2);
 }
 
 void SIGNATURE_mesh::gpu_base_smart(){
