@@ -1,6 +1,6 @@
 #include "config/c_pch.h"
 #include <singleton/st_gl.h>
-#include <signature/s_mesh.h>
+#include <singleton/st_system.h>
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
     glViewport(0, 0, width, height);
@@ -37,6 +37,7 @@ void GL_gpu(){
 
 void SYSTEM_init(){
     G_C_gl = new SINGLETON_C_gl();
+    G_S_system = new SINGLETON_system();
 }
 
 void openGL(){
@@ -53,17 +54,6 @@ int main() {
 
     GLFWwindow* win = G_C_gl->get_window();
     
-    DtoSubMesh sg_mesh;
-    sg_mesh.x = 0.f;
-    sg_mesh.y = 0.f;
-    sg_mesh.w = 0.5f;
-    sg_mesh.h = 0.5f;
-    sg_mesh.color = std::vector<float>{
-        1.0f, 0.75f, 0.8f, 1.0f
-    };
-
-    SIGNATURE_mesh *obj = new SIGNATURE_mesh(sg_mesh);
-    
     while (!glfwWindowShouldClose(win)) {
         // Input Handling
         if (glfwGetKey(win, GLFW_KEY_ESCAPE) == GLFW_PRESS){
@@ -73,8 +63,8 @@ int main() {
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        // THE WRITING!
-        obj->execute();
+        // THE WRITING SECTION HERE!
+        G_S_system->get_render_screen()->execute();
         
         // Swap Buffers & Poll Events
         glfwSwapBuffers(win);

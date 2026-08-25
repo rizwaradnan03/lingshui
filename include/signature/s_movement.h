@@ -2,6 +2,7 @@
 #define SIGNATURE_MOVEMENT_H
 
 #include <dto/dto_s_movement.h>
+#include <namespace/n_input.h>
 #include <signature/s_mesh.h>
 
 class SIGNATURE_movement {

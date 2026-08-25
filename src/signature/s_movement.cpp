@@ -13,5 +13,10 @@ void SIGNATURE_movement::set_mesh(SIGNATURE_mesh* value){
 }
 
 void execute(){
+    std::string *input = input::mouse_pressed();
+    if(input == nullptr){
+        return;
+    }
+
     
 }
