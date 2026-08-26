@@ -202,6 +202,174 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/namespace/n_input.o: src/namespace/n_input.cpp.o
+.PHONY : src/namespace/n_input.o
+
+# target to build an object file
+src/namespace/n_input.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/namespace/n_input.cpp.o
+.PHONY : src/namespace/n_input.cpp.o
+
+src/namespace/n_input.i: src/namespace/n_input.cpp.i
+.PHONY : src/namespace/n_input.i
+
+# target to preprocess a source file
+src/namespace/n_input.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/namespace/n_input.cpp.i
+.PHONY : src/namespace/n_input.cpp.i
+
+src/namespace/n_input.s: src/namespace/n_input.cpp.s
+.PHONY : src/namespace/n_input.s
+
+# target to generate assembly for a file
+src/namespace/n_input.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/namespace/n_input.cpp.s
+.PHONY : src/namespace/n_input.cpp.s
+
+src/nodes/2d/body/body.o: src/nodes/2d/body/body.cpp.o
+.PHONY : src/nodes/2d/body/body.o
+
+# target to build an object file
+src/nodes/2d/body/body.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/nodes/2d/body/body.cpp.o
+.PHONY : src/nodes/2d/body/body.cpp.o
+
+src/nodes/2d/body/body.i: src/nodes/2d/body/body.cpp.i
+.PHONY : src/nodes/2d/body/body.i
+
+# target to preprocess a source file
+src/nodes/2d/body/body.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/nodes/2d/body/body.cpp.i
+.PHONY : src/nodes/2d/body/body.cpp.i
+
+src/nodes/2d/body/body.s: src/nodes/2d/body/body.cpp.s
+.PHONY : src/nodes/2d/body/body.s
+
+# target to generate assembly for a file
+src/nodes/2d/body/body.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/nodes/2d/body/body.cpp.s
+.PHONY : src/nodes/2d/body/body.cpp.s
+
+src/nodes/2d/render-type/render_type.o: src/nodes/2d/render-type/render_type.cpp.o
+.PHONY : src/nodes/2d/render-type/render_type.o
+
+# target to build an object file
+src/nodes/2d/render-type/render_type.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/render_type.cpp.o
+.PHONY : src/nodes/2d/render-type/render_type.cpp.o
+
+src/nodes/2d/render-type/render_type.i: src/nodes/2d/render-type/render_type.cpp.i
+.PHONY : src/nodes/2d/render-type/render_type.i
+
+# target to preprocess a source file
+src/nodes/2d/render-type/render_type.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/render_type.cpp.i
+.PHONY : src/nodes/2d/render-type/render_type.cpp.i
+
+src/nodes/2d/render-type/render_type.s: src/nodes/2d/render-type/render_type.cpp.s
+.PHONY : src/nodes/2d/render-type/render_type.s
+
+# target to generate assembly for a file
+src/nodes/2d/render-type/render_type.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/render_type.cpp.s
+.PHONY : src/nodes/2d/render-type/render_type.cpp.s
+
+src/nodes/2d/render-type/rt_world.o: src/nodes/2d/render-type/rt_world.cpp.o
+.PHONY : src/nodes/2d/render-type/rt_world.o
+
+# target to build an object file
+src/nodes/2d/render-type/rt_world.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/rt_world.cpp.o
+.PHONY : src/nodes/2d/render-type/rt_world.cpp.o
+
+src/nodes/2d/render-type/rt_world.i: src/nodes/2d/render-type/rt_world.cpp.i
+.PHONY : src/nodes/2d/render-type/rt_world.i
+
+# target to preprocess a source file
+src/nodes/2d/render-type/rt_world.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/rt_world.cpp.i
+.PHONY : src/nodes/2d/render-type/rt_world.cpp.i
+
+src/nodes/2d/render-type/rt_world.s: src/nodes/2d/render-type/rt_world.cpp.s
+.PHONY : src/nodes/2d/render-type/rt_world.s
+
+# target to generate assembly for a file
+src/nodes/2d/render-type/rt_world.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/rt_world.cpp.s
+.PHONY : src/nodes/2d/render-type/rt_world.cpp.s
+
+src/nodes/2d/uni/uni.o: src/nodes/2d/uni/uni.cpp.o
+.PHONY : src/nodes/2d/uni/uni.o
+
+# target to build an object file
+src/nodes/2d/uni/uni.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni.cpp.o
+.PHONY : src/nodes/2d/uni/uni.cpp.o
+
+src/nodes/2d/uni/uni.i: src/nodes/2d/uni/uni.cpp.i
+.PHONY : src/nodes/2d/uni/uni.i
+
+# target to preprocess a source file
+src/nodes/2d/uni/uni.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni.cpp.i
+.PHONY : src/nodes/2d/uni/uni.cpp.i
+
+src/nodes/2d/uni/uni.s: src/nodes/2d/uni/uni.cpp.s
+.PHONY : src/nodes/2d/uni/uni.s
+
+# target to generate assembly for a file
+src/nodes/2d/uni/uni.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni.cpp.s
+.PHONY : src/nodes/2d/uni/uni.cpp.s
+
+src/nodes/2d/uni/uni_wear.o: src/nodes/2d/uni/uni_wear.cpp.o
+.PHONY : src/nodes/2d/uni/uni_wear.o
+
+# target to build an object file
+src/nodes/2d/uni/uni_wear.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni_wear.cpp.o
+.PHONY : src/nodes/2d/uni/uni_wear.cpp.o
+
+src/nodes/2d/uni/uni_wear.i: src/nodes/2d/uni/uni_wear.cpp.i
+.PHONY : src/nodes/2d/uni/uni_wear.i
+
+# target to preprocess a source file
+src/nodes/2d/uni/uni_wear.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni_wear.cpp.i
+.PHONY : src/nodes/2d/uni/uni_wear.cpp.i
+
+src/nodes/2d/uni/uni_wear.s: src/nodes/2d/uni/uni_wear.cpp.s
+.PHONY : src/nodes/2d/uni/uni_wear.s
+
+# target to generate assembly for a file
+src/nodes/2d/uni/uni_wear.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni_wear.cpp.s
+.PHONY : src/nodes/2d/uni/uni_wear.cpp.s
+
+src/signature/s_life.o: src/signature/s_life.cpp.o
+.PHONY : src/signature/s_life.o
+
+# target to build an object file
+src/signature/s_life.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.o
+.PHONY : src/signature/s_life.cpp.o
+
+src/signature/s_life.i: src/signature/s_life.cpp.i
+.PHONY : src/signature/s_life.i
+
+# target to preprocess a source file
+src/signature/s_life.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.i
+.PHONY : src/signature/s_life.cpp.i
+
+src/signature/s_life.s: src/signature/s_life.cpp.s
+.PHONY : src/signature/s_life.s
+
+# target to generate assembly for a file
+src/signature/s_life.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.s
+.PHONY : src/signature/s_life.cpp.s
+
 src/signature/s_mesh.o: src/signature/s_mesh.cpp.o
 .PHONY : src/signature/s_mesh.o
 
@@ -225,6 +393,30 @@ src/signature/s_mesh.s: src/signature/s_mesh.cpp.s
 src/signature/s_mesh.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.s
 .PHONY : src/signature/s_mesh.cpp.s
+
+src/signature/s_movement.o: src/signature/s_movement.cpp.o
+.PHONY : src/signature/s_movement.o
+
+# target to build an object file
+src/signature/s_movement.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/signature/s_movement.cpp.o
+.PHONY : src/signature/s_movement.cpp.o
+
+src/signature/s_movement.i: src/signature/s_movement.cpp.i
+.PHONY : src/signature/s_movement.i
+
+# target to preprocess a source file
+src/signature/s_movement.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/signature/s_movement.cpp.i
+.PHONY : src/signature/s_movement.cpp.i
+
+src/signature/s_movement.s: src/signature/s_movement.cpp.s
+.PHONY : src/signature/s_movement.s
+
+# target to generate assembly for a file
+src/signature/s_movement.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/signature/s_movement.cpp.s
+.PHONY : src/signature/s_movement.cpp.s
 
 src/singleton/st_gl.o: src/singleton/st_gl.cpp.o
 .PHONY : src/singleton/st_gl.o
@@ -250,6 +442,30 @@ src/singleton/st_gl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/singleton/st_gl.cpp.s
 .PHONY : src/singleton/st_gl.cpp.s
 
+src/singleton/st_system.o: src/singleton/st_system.cpp.o
+.PHONY : src/singleton/st_system.o
+
+# target to build an object file
+src/singleton/st_system.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/singleton/st_system.cpp.o
+.PHONY : src/singleton/st_system.cpp.o
+
+src/singleton/st_system.i: src/singleton/st_system.cpp.i
+.PHONY : src/singleton/st_system.i
+
+# target to preprocess a source file
+src/singleton/st_system.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/singleton/st_system.cpp.i
+.PHONY : src/singleton/st_system.cpp.i
+
+src/singleton/st_system.s: src/singleton/st_system.cpp.s
+.PHONY : src/singleton/st_system.s
+
+# target to generate assembly for a file
+src/singleton/st_system.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/singleton/st_system.cpp.s
+.PHONY : src/singleton/st_system.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -268,12 +484,39 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/namespace/n_input.o"
+	@echo "... src/namespace/n_input.i"
+	@echo "... src/namespace/n_input.s"
+	@echo "... src/nodes/2d/body/body.o"
+	@echo "... src/nodes/2d/body/body.i"
+	@echo "... src/nodes/2d/body/body.s"
+	@echo "... src/nodes/2d/render-type/render_type.o"
+	@echo "... src/nodes/2d/render-type/render_type.i"
+	@echo "... src/nodes/2d/render-type/render_type.s"
+	@echo "... src/nodes/2d/render-type/rt_world.o"
+	@echo "... src/nodes/2d/render-type/rt_world.i"
+	@echo "... src/nodes/2d/render-type/rt_world.s"
+	@echo "... src/nodes/2d/uni/uni.o"
+	@echo "... src/nodes/2d/uni/uni.i"
+	@echo "... src/nodes/2d/uni/uni.s"
+	@echo "... src/nodes/2d/uni/uni_wear.o"
+	@echo "... src/nodes/2d/uni/uni_wear.i"
+	@echo "... src/nodes/2d/uni/uni_wear.s"
+	@echo "... src/signature/s_life.o"
+	@echo "... src/signature/s_life.i"
+	@echo "... src/signature/s_life.s"
 	@echo "... src/signature/s_mesh.o"
 	@echo "... src/signature/s_mesh.i"
 	@echo "... src/signature/s_mesh.s"
+	@echo "... src/signature/s_movement.o"
+	@echo "... src/signature/s_movement.i"
+	@echo "... src/signature/s_movement.s"
 	@echo "... src/singleton/st_gl.o"
 	@echo "... src/singleton/st_gl.i"
 	@echo "... src/singleton/st_gl.s"
+	@echo "... src/singleton/st_system.o"
+	@echo "... src/singleton/st_system.i"
+	@echo "... src/singleton/st_system.s"
 .PHONY : help
 
 

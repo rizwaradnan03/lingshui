@@ -1,3 +1,4 @@
+#include "dto/dto_g_axist.h"
 #include <signature/s_mesh.h>
 
 SIGNATURE_mesh::SIGNATURE_mesh(DtoSubMesh init){
@@ -20,7 +21,7 @@ SIGNATURE_mesh::SIGNATURE_mesh(DtoSubMesh init){
 
     uint8_t x_exist = m.i_size;
     uint8_t y_exist = m.i_size;
-    for(uint16_t i = 0;i < 8;i++){
+    for(uint16_t i = 0;i < m.v_size;i++){
         if(i + 2 % 2 == 0){
             if(x_exist == m.i_size || (x_exist != m.i_size && x_exist + 1 == x_exist / 2)){ // be the negative
                 m.raw_vertices.push_back(m.x - w_half);
@@ -89,14 +90,14 @@ void SIGNATURE_mesh::set_VBO(GLuint value){
 
 void SIGNATURE_mesh::process_VBO(){
     DtoSubMesh& m = this->get_mesh();
-    
-    GLuint v;
-    glGenBuffers(1, &v);
-    glBindBuffer(GL_ARRAY_BUFFER, v);
 
-    glBufferData(GL_ARRAY_BUFFER, m.raw_vertices.size() * sizeof(float), m.vertices, GL_STATIC_DRAW);
-    
-    this->set_VBO(v);
+    if(this->get_VBO() == 0){ // CREATE BUFFER FOR THE FIRST TIME
+        glGenBuffers(1, &this->VBO);
+    }
+
+    // CALL BUFFER TO USE THE VERTICES VALUE
+    glBindBuffer(GL_ARRAY_BUFFER, this->VBO);
+    glBufferData(GL_ARRAY_BUFFER, m.v_size * sizeof(float), m.vertices, GL_STATIC_DRAW);
 }
 
 DtoSubMesh& SIGNATURE_mesh::get_mesh(){
@@ -199,6 +200,23 @@ void SIGNATURE_mesh::color_draw(){
     
     int c_loc = glGetUniformLocation(m.shaderProgram, "objectColor");
     glUniform4f(c_loc, color[0], color[1], color[2], color[3]);
+}
+
+void SIGNATURE_mesh::change_axist(DtoEnumAxist axist, float value){
+    DtoSubMesh& m = this->get_mesh();
+
+    uint8_t div_by = 1;
+    if(axist == X){
+        div_by = 0;
+    }
+
+    for(uint8_t i = 0;i < m.v_size;i++){
+        if((i + 2) % 2 == div_by){
+            m.vertices[i] += value;
+        }
+    }
+
+    this->process_VBO();
 }
 
 void SIGNATURE_mesh::execute(){    

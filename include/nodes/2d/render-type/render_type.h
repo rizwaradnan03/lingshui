@@ -9,11 +9,11 @@ class RenderType {
         RenderType();
         ~RenderType();
         
-        std::vector<Uni*> get_nodes();
-        void set_nodes(std::vector<Uni*> value);
-        void set_push_nodes(Uni* value);
+        virtual std::vector<Uni*> get_nodes();
+        virtual void set_nodes(std::vector<Uni*> value);
+        virtual void set_push_nodes(Uni* value);
 
-        void execute();
+        virtual void execute();
         
     private:
         std::vector<Uni*> nodes;  

@@ -4,6 +4,7 @@
 #include <config/c_pch.h>
 #include <constants/ct_shader.h>
 #include <dto/dto_s_mesh.h>
+#include <dto/dto_g_axist.h>
 
 class SIGNATURE_mesh {
     public:
@@ -33,6 +34,8 @@ class SIGNATURE_mesh {
         
         void display();
         void color_draw();
+
+        void change_axist(DtoEnumAxist axist, float value);
         
         void execute();
 

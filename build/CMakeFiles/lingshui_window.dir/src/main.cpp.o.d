@@ -157,6 +157,13 @@ CMakeFiles/lingshui_window.dir/src/main.cpp.o: \
  /usr/include/c++/16/bits/chrono.h /usr/include/c++/16/ratio \
  /usr/include/c++/16/limits /usr/include/c++/16/ctime \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/singleton/st_gl.h \
+ /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/singleton/st_system.h \
+ /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_s_system.h \
+ /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/nodes/2d/render-type/render_type.h \
+ /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/nodes/2d/uni/uni.h \
+ /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_n_uni.h \
+ /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_s_mesh.h \
+ /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_pole.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/signature/s_mesh.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/constants/ct_shader.h \
- /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_s_mesh.h
+ /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_axist.h

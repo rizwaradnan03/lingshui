@@ -19,14 +19,68 @@
 },
 {
   "directory": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build",
+  "command": "/usr/bin/c++  -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/external -std=gnu++17 -o CMakeFiles/lingshui_window.dir/src/namespace/n_input.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/namespace/n_input.cpp",
+  "file": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/namespace/n_input.cpp",
+  "output": "CMakeFiles/lingshui_window.dir/src/namespace/n_input.cpp.o"
+},
+{
+  "directory": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build",
+  "command": "/usr/bin/c++  -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/external -std=gnu++17 -o CMakeFiles/lingshui_window.dir/src/nodes/2d/body/body.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/body/body.cpp",
+  "file": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/body/body.cpp",
+  "output": "CMakeFiles/lingshui_window.dir/src/nodes/2d/body/body.cpp.o"
+},
+{
+  "directory": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build",
+  "command": "/usr/bin/c++  -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/external -std=gnu++17 -o CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/render_type.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/render-type/render_type.cpp",
+  "file": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/render-type/render_type.cpp",
+  "output": "CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/render_type.cpp.o"
+},
+{
+  "directory": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build",
+  "command": "/usr/bin/c++  -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/external -std=gnu++17 -o CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/rt_world.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/render-type/rt_world.cpp",
+  "file": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/render-type/rt_world.cpp",
+  "output": "CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/rt_world.cpp.o"
+},
+{
+  "directory": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build",
+  "command": "/usr/bin/c++  -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/external -std=gnu++17 -o CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/uni/uni.cpp",
+  "file": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/uni/uni.cpp",
+  "output": "CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni.cpp.o"
+},
+{
+  "directory": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build",
+  "command": "/usr/bin/c++  -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/external -std=gnu++17 -o CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni_wear.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/uni/uni_wear.cpp",
+  "file": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/uni/uni_wear.cpp",
+  "output": "CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni_wear.cpp.o"
+},
+{
+  "directory": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build",
+  "command": "/usr/bin/c++  -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/external -std=gnu++17 -o CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_life.cpp",
+  "file": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_life.cpp",
+  "output": "CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.o"
+},
+{
+  "directory": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build",
   "command": "/usr/bin/c++  -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/external -std=gnu++17 -o CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_mesh.cpp",
   "file": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_mesh.cpp",
   "output": "CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.o"
 },
 {
   "directory": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build",
+  "command": "/usr/bin/c++  -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/external -std=gnu++17 -o CMakeFiles/lingshui_window.dir/src/signature/s_movement.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_movement.cpp",
+  "file": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_movement.cpp",
+  "output": "CMakeFiles/lingshui_window.dir/src/signature/s_movement.cpp.o"
+},
+{
+  "directory": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build",
   "command": "/usr/bin/c++  -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/external -std=gnu++17 -o CMakeFiles/lingshui_window.dir/src/singleton/st_gl.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/singleton/st_gl.cpp",
   "file": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/singleton/st_gl.cpp",
   "output": "CMakeFiles/lingshui_window.dir/src/singleton/st_gl.cpp.o"
+},
+{
+  "directory": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build",
+  "command": "/usr/bin/c++  -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/external -std=gnu++17 -o CMakeFiles/lingshui_window.dir/src/singleton/st_system.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/singleton/st_system.cpp",
+  "file": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/singleton/st_system.cpp",
+  "output": "CMakeFiles/lingshui_window.dir/src/singleton/st_system.cpp.o"
 }
 ]

@@ -5,8 +5,17 @@ lingshui_window: \
   CMakeFiles/lingshui_window.dir/src/constants/ct_shader.cpp.o \
   CMakeFiles/lingshui_window.dir/src/glad.c.o \
   CMakeFiles/lingshui_window.dir/src/main.cpp.o \
+  CMakeFiles/lingshui_window.dir/src/namespace/n_input.cpp.o \
+  CMakeFiles/lingshui_window.dir/src/nodes/2d/body/body.cpp.o \
+  CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/render_type.cpp.o \
+  CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/rt_world.cpp.o \
+  CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni.cpp.o \
+  CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni_wear.cpp.o \
+  CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.o \
   CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.o \
+  CMakeFiles/lingshui_window.dir/src/signature/s_movement.cpp.o \
   CMakeFiles/lingshui_window.dir/src/singleton/st_gl.cpp.o \
+  CMakeFiles/lingshui_window.dir/src/singleton/st_system.cpp.o \
   /usr/lib/libglfw.so.3.5 \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libdl.a \
   /usr/lib/libGLX.so \
@@ -63,9 +72,27 @@ CMakeFiles/lingshui_window.dir/src/glad.c.o:
 
 CMakeFiles/lingshui_window.dir/src/main.cpp.o:
 
+CMakeFiles/lingshui_window.dir/src/namespace/n_input.cpp.o:
+
+CMakeFiles/lingshui_window.dir/src/nodes/2d/body/body.cpp.o:
+
+CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/render_type.cpp.o:
+
+CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/rt_world.cpp.o:
+
+CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni.cpp.o:
+
+CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni_wear.cpp.o:
+
+CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.o:
+
 CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.o:
 
+CMakeFiles/lingshui_window.dir/src/signature/s_movement.cpp.o:
+
 CMakeFiles/lingshui_window.dir/src/singleton/st_gl.cpp.o:
+
+CMakeFiles/lingshui_window.dir/src/singleton/st_system.cpp.o:
 
 /usr/lib/libglfw.so.3.5:
 

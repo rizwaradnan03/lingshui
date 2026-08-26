@@ -11,8 +11,17 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/glad.c" "CMakeFiles/lingshui_window.dir/src/glad.c.o" "gcc" "CMakeFiles/lingshui_window.dir/src/glad.c.o.d"
   "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/constants/ct_shader.cpp" "CMakeFiles/lingshui_window.dir/src/constants/ct_shader.cpp.o" "gcc" "CMakeFiles/lingshui_window.dir/src/constants/ct_shader.cpp.o.d"
   "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/main.cpp" "CMakeFiles/lingshui_window.dir/src/main.cpp.o" "gcc" "CMakeFiles/lingshui_window.dir/src/main.cpp.o.d"
+  "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/namespace/n_input.cpp" "CMakeFiles/lingshui_window.dir/src/namespace/n_input.cpp.o" "gcc" "CMakeFiles/lingshui_window.dir/src/namespace/n_input.cpp.o.d"
+  "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/body/body.cpp" "CMakeFiles/lingshui_window.dir/src/nodes/2d/body/body.cpp.o" "gcc" "CMakeFiles/lingshui_window.dir/src/nodes/2d/body/body.cpp.o.d"
+  "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/render-type/render_type.cpp" "CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/render_type.cpp.o" "gcc" "CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/render_type.cpp.o.d"
+  "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/render-type/rt_world.cpp" "CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/rt_world.cpp.o" "gcc" "CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/rt_world.cpp.o.d"
+  "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/uni/uni.cpp" "CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni.cpp.o" "gcc" "CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni.cpp.o.d"
+  "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/uni/uni_wear.cpp" "CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni_wear.cpp.o" "gcc" "CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni_wear.cpp.o.d"
+  "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_life.cpp" "CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.o" "gcc" "CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.o.d"
   "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_mesh.cpp" "CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.o" "gcc" "CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.o.d"
+  "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_movement.cpp" "CMakeFiles/lingshui_window.dir/src/signature/s_movement.cpp.o" "gcc" "CMakeFiles/lingshui_window.dir/src/signature/s_movement.cpp.o.d"
   "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/singleton/st_gl.cpp" "CMakeFiles/lingshui_window.dir/src/singleton/st_gl.cpp.o" "gcc" "CMakeFiles/lingshui_window.dir/src/singleton/st_gl.cpp.o.d"
+  "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/singleton/st_system.cpp" "CMakeFiles/lingshui_window.dir/src/singleton/st_system.cpp.o" "gcc" "CMakeFiles/lingshui_window.dir/src/singleton/st_system.cpp.o.d"
   "" "lingshui_window" "gcc" "CMakeFiles/lingshui_window.dir/link.d"
   )
 

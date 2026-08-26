@@ -12,11 +12,16 @@ void SIGNATURE_movement::set_mesh(SIGNATURE_mesh* value){
     this->p_mesh = value;
 }
 
-void execute(){
+void SIGNATURE_movement::execute(){
     std::string *input = input::mouse_pressed();
     if(input == nullptr){
         return;
     }
 
+    SIGNATURE_mesh *mesh = this->get_mesh();
     
+    float mv = 1.0f;
+    if(*input == "RIGHT" || *input == "LEFT"){
+        mesh->get_mesh().x = mesh->get_mesh().x + (*input == "RIGHT" ? mv : mv * -1);
+    }
 }

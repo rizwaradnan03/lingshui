@@ -7,3 +7,8 @@ NOTE
 CARA KERJA RENDER
 1. shaderProgram yang mengatur shader (vertices, fragment) untuk pewarnaan...dan terdapat variable pada fragment / vertices yang dapat diambil lokasinya dengan passing shaderProgram lalu nama variable nya
 2. VAO adalah largest buffer yang menampung VBO (titik sudut) & EBO (urutan render sudut)
+
+-----------------------------------------------------------------------------------------------------------------------------
+1. list of uni from world to initialize
+2. vbo update
+3. uni gun, uni ances

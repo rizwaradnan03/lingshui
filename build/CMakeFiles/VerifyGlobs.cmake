@@ -32,8 +32,17 @@ file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/rizwarmcgovney/Document
 set(OLD_GLOB
   "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/constants/ct_shader.cpp"
   "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/main.cpp"
+  "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/namespace/n_input.cpp"
+  "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/body/body.cpp"
+  "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/render-type/render_type.cpp"
+  "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/render-type/rt_world.cpp"
+  "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/uni/uni.cpp"
+  "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/uni/uni_wear.cpp"
+  "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_life.cpp"
   "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_mesh.cpp"
+  "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_movement.cpp"
   "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/singleton/st_gl.cpp"
+  "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/singleton/st_system.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

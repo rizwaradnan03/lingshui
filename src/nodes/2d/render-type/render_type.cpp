@@ -1,5 +1,7 @@
 #include <nodes/2d/render-type/render_type.h>
 
+RenderType *G_N_render_type = nullptr;
+
 RenderType::RenderType(){}
 
 RenderType::~RenderType(){
@@ -20,3 +22,5 @@ void RenderType::set_nodes(std::vector<Uni*> value){
 void RenderType::set_push_nodes(Uni* value){
     this->nodes.push_back(value);
 }
+
+void RenderType::execute(){}
