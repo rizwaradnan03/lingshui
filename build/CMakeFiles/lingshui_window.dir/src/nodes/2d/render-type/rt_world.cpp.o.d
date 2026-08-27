@@ -162,9 +162,11 @@ CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/rt_world.cpp.o: \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_n_uni.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_s_mesh.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_pole.h \
+ /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_shape.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/signature/s_mesh.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/constants/ct_shader.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_axist.h \
+ /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/namespace/n_shape.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/nodes/2d/body/body.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_n_body.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_s_life.h \

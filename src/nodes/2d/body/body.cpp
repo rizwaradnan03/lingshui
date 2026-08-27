@@ -1,15 +1,21 @@
 #include <nodes/2d/body/body.h>
 
 Body::Body(DtoNodeBody init){
-    SIGNATURE_mesh *init_mesh = new SIGNATURE_mesh(init.mesh);
-    SIGNATURE_life *init_life = new SIGNATURE_life(init.life);
+    DtoNodeBody dp_init = init;
+    
+    SIGNATURE_mesh *init_mesh = new SIGNATURE_mesh(dp_init.mesh);
+    SIGNATURE_life *init_life = new SIGNATURE_life(dp_init.life);
 
-    init.movement.mesh = init_mesh;
-    SIGNATURE_movement *init_movement = new SIGNATURE_movement(init.movement);
+    dp_init.movement.mesh = init_mesh;
+    SIGNATURE_movement *init_movement = new SIGNATURE_movement(dp_init.movement);
+
+    this->set_mesh(init_mesh);
+    this->set_life(init_life);
+    this->set_movement(init_movement);
 }
 
 SIGNATURE_mesh *Body::get_mesh(){
-    return this->get_mesh();
+    return this->mesh;
 }
 
 void Body::set_mesh(SIGNATURE_mesh *value){
@@ -17,7 +23,7 @@ void Body::set_mesh(SIGNATURE_mesh *value){
 }
 
 SIGNATURE_life *Body::get_life(){
-    return this->get_life();
+    return this->life;
 }
 
 void Body::set_life(SIGNATURE_life *value){
@@ -25,7 +31,7 @@ void Body::set_life(SIGNATURE_life *value){
 }
 
 SIGNATURE_movement *Body::get_movement(){
-    return this->get_movement();
+    return this->movement;
 }
 
 void Body::set_movement(SIGNATURE_movement *value){

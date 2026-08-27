@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/lingshui_window.dir/src/main.cpp.o.d"
   "CMakeFiles/lingshui_window.dir/src/namespace/n_input.cpp.o"
   "CMakeFiles/lingshui_window.dir/src/namespace/n_input.cpp.o.d"
+  "CMakeFiles/lingshui_window.dir/src/namespace/n_shape.cpp.o"
+  "CMakeFiles/lingshui_window.dir/src/namespace/n_shape.cpp.o.d"
   "CMakeFiles/lingshui_window.dir/src/nodes/2d/body/body.cpp.o"
   "CMakeFiles/lingshui_window.dir/src/nodes/2d/body/body.cpp.o.d"
   "CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/render_type.cpp.o"

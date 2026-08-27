@@ -5,10 +5,11 @@
 #include <constants/ct_shader.h>
 #include <dto/dto_s_mesh.h>
 #include <dto/dto_g_axist.h>
+#include <namespace/n_shape.h>
 
 class SIGNATURE_mesh {
     public:
-        SIGNATURE_mesh(DtoSubMesh init);
+        SIGNATURE_mesh(const DtoSubMesh& init);
         ~SIGNATURE_mesh();
         
         GLuint get_VAO();

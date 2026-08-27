@@ -160,6 +160,8 @@ CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni.cpp.o: \
  /usr/include/c++/16/limits /usr/include/c++/16/ctime \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_s_mesh.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_pole.h \
+ /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_shape.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/signature/s_mesh.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/constants/ct_shader.h \
- /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_axist.h
+ /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_axist.h \
+ /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/namespace/n_shape.h

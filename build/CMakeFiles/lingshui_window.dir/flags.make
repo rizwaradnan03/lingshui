@@ -7,11 +7,11 @@ C_DEFINES =
 
 C_INCLUDES = -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/external
 
-C_FLAGS = 
+C_FLAGS = -g
 
 CXX_DEFINES = 
 
 CXX_INCLUDES = -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/external
 
-CXX_FLAGS = -std=gnu++17
+CXX_FLAGS =  -g -O0 -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++17
 

@@ -2,10 +2,13 @@ lingshui_window: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16/libasan_preinit.o \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libasan.so \
   CMakeFiles/lingshui_window.dir/src/constants/ct_shader.cpp.o \
   CMakeFiles/lingshui_window.dir/src/glad.c.o \
   CMakeFiles/lingshui_window.dir/src/main.cpp.o \
   CMakeFiles/lingshui_window.dir/src/namespace/n_input.cpp.o \
+  CMakeFiles/lingshui_window.dir/src/namespace/n_shape.cpp.o \
   CMakeFiles/lingshui_window.dir/src/nodes/2d/body/body.cpp.o \
   CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/render_type.cpp.o \
   CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/rt_world.cpp.o \
@@ -66,6 +69,10 @@ lingshui_window: \
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/libasan_preinit.o:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libasan.so:
+
 CMakeFiles/lingshui_window.dir/src/constants/ct_shader.cpp.o:
 
 CMakeFiles/lingshui_window.dir/src/glad.c.o:
@@ -73,6 +80,8 @@ CMakeFiles/lingshui_window.dir/src/glad.c.o:
 CMakeFiles/lingshui_window.dir/src/main.cpp.o:
 
 CMakeFiles/lingshui_window.dir/src/namespace/n_input.cpp.o:
+
+CMakeFiles/lingshui_window.dir/src/namespace/n_shape.cpp.o:
 
 CMakeFiles/lingshui_window.dir/src/nodes/2d/body/body.cpp.o:
 

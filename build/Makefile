@@ -226,6 +226,30 @@ src/namespace/n_input.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/namespace/n_input.cpp.s
 .PHONY : src/namespace/n_input.cpp.s
 
+src/namespace/n_shape.o: src/namespace/n_shape.cpp.o
+.PHONY : src/namespace/n_shape.o
+
+# target to build an object file
+src/namespace/n_shape.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/namespace/n_shape.cpp.o
+.PHONY : src/namespace/n_shape.cpp.o
+
+src/namespace/n_shape.i: src/namespace/n_shape.cpp.i
+.PHONY : src/namespace/n_shape.i
+
+# target to preprocess a source file
+src/namespace/n_shape.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/namespace/n_shape.cpp.i
+.PHONY : src/namespace/n_shape.cpp.i
+
+src/namespace/n_shape.s: src/namespace/n_shape.cpp.s
+.PHONY : src/namespace/n_shape.s
+
+# target to generate assembly for a file
+src/namespace/n_shape.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/namespace/n_shape.cpp.s
+.PHONY : src/namespace/n_shape.cpp.s
+
 src/nodes/2d/body/body.o: src/nodes/2d/body/body.cpp.o
 .PHONY : src/nodes/2d/body/body.o
 
@@ -487,6 +511,9 @@ help:
 	@echo "... src/namespace/n_input.o"
 	@echo "... src/namespace/n_input.i"
 	@echo "... src/namespace/n_input.s"
+	@echo "... src/namespace/n_shape.o"
+	@echo "... src/namespace/n_shape.i"
+	@echo "... src/namespace/n_shape.s"
 	@echo "... src/nodes/2d/body/body.o"
 	@echo "... src/nodes/2d/body/body.i"
 	@echo "... src/nodes/2d/body/body.s"

@@ -3,15 +3,18 @@
 
 #include <config/c_pch.h>
 #include <dto/dto_g_pole.h>
+#include <dto/dto_g_shape.h>
 
 struct DtoSubMesh {
+    // REQUIRED
     float x = 0, y = 0, w, h;
+    DtoEnumGlobalShape shape;
+
     DtoGlobalPole pole;
     std::vector<float> color;
 
     uint8_t v_size;
     uint8_t i_size;
-    std::vector<float> raw_vertices;
     float vertices[255];
     uint8_t indices[255];
 

@@ -162,6 +162,8 @@ CMakeFiles/lingshui_window.dir/src/signature/s_movement.cpp.o: \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/constants/ct_shader.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_s_mesh.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_pole.h \
+ /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_shape.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_axist.h \
+ /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/namespace/n_shape.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/namespace/n_input.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/singleton/st_gl.h

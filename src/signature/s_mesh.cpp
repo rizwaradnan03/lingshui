@@ -1,52 +1,49 @@
-#include "dto/dto_g_axist.h"
 #include <signature/s_mesh.h>
 
-SIGNATURE_mesh::SIGNATURE_mesh(DtoSubMesh init){
-    DtoSubMesh mesh = init;
-
+SIGNATURE_mesh::SIGNATURE_mesh(const DtoSubMesh& init){
+    this->set_mesh(init);
+    
     float w_half = init.w / 2;
     float h_half = init.h / 2;    
-    
-    // mesh.raw_vertices = {
-    //     init.x - w_half, init.y - h_half,
-    //     init.x + w_half, init.y - h_half,
-    //     init.x + w_half, init.y + h_half,
-    //     init.x - w_half, init.y + h_half
-    // };
 
-    this->set_mesh(mesh);
     this->calculate_count_of_attribute();
 
     DtoSubMesh& m = this->get_mesh();
-
-    uint8_t x_exist = m.i_size;
-    uint8_t y_exist = m.i_size;
+    
+    uint8_t x_exist = m.v_size / 2;
+    uint8_t y_exist = m.v_size / 2;
     for(uint16_t i = 0;i < m.v_size;i++){
-        if(i + 2 % 2 == 0){
-            if(x_exist == m.i_size || (x_exist != m.i_size && x_exist + 1 == x_exist / 2)){ // be the negative
-                m.raw_vertices.push_back(m.x - w_half);
+        float val;
+        if((i + 2) % 2 == 0){
+            if(x_exist == m.v_size / 2 || (x_exist != m.v_size / 2 && x_exist < (m.v_size / 2) / 2)){ // be the negative
+                val = m.x - w_half;
             }else{
-                m.raw_vertices.push_back(m.x + w_half);
+                val = m.x + w_half;
             }
-
             x_exist -= 1;
         }else{
-            if(y_exist == m.i_size || (y_exist != m.i_size && y_exist + 1 == y_exist / 2)){
-                m.raw_vertices.push_back(m.y - h_half);
+            if(y_exist > (m.v_size / 2) / 2){
+                val = m.y - h_half;
             }else{
-                m.raw_vertices.push_back(m.y + h_half);
-            }   
+                val = m.y + h_half;
+            }
             
             y_exist -= 1;
         }
+        
+        m.vertices[i] = val;
     }
-    
-    for(uint8_t i = 0; i < m.v_size; i++){
-        m.vertices[i] = m.raw_vertices[i];
-    }
-    
+
     this->calculate_ebo();
     this->init_shader_buffer();
+
+    for(uint8_t i = 0;i < m.v_size;i++){
+        std::cout << "VERT : " << m.vertices[i] << std::endl;
+    }
+
+    for(uint8_t i = 0;i < m.i_size;i++){
+        std::cout << "INDICES : " << static_cast<int>(m.indices[i]) << std::endl;
+    }
     
     this->process_VAO();
     this->process_VBO();
@@ -166,10 +163,10 @@ void SIGNATURE_mesh::calculate_ebo(){
 }
 
 void SIGNATURE_mesh::calculate_count_of_attribute(){
-    DtoSubMesh& mesh = this->get_mesh();
-    
-    mesh.v_size = mesh.raw_vertices.size();
-    mesh.i_size = (mesh.v_size / 2) + ((mesh.v_size / 2) / 2);
+    DtoSubMesh& m = this->get_mesh();
+
+    m.v_size = shape::get_vertice_value_from_shape(m.shape) * 2;
+    m.i_size = (m.v_size / 2) + ((m.v_size / 2) / 2);
 }
 
 void SIGNATURE_mesh::gpu_base_smart(){
@@ -179,19 +176,6 @@ void SIGNATURE_mesh::gpu_base_smart(){
     glBindVertexArray(0); // UNBINDING VAO!
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
-}
-
-void SIGNATURE_mesh::display(){
-    DtoSubMesh& m = this->get_mesh();
-    
-    glUseProgram(m.shaderProgram);
-    this->color_draw();
-    
-    glBindVertexArray(this->get_VAO());
-
-    glDrawElements(GL_TRIANGLES, m.i_size, GL_UNSIGNED_BYTE, 0);
-    
-    glBindVertexArray(0);
 }
 
 void SIGNATURE_mesh::color_draw(){
@@ -221,4 +205,17 @@ void SIGNATURE_mesh::change_axist(DtoEnumAxist axist, float value){
 
 void SIGNATURE_mesh::execute(){    
     this->display();
+}
+
+void SIGNATURE_mesh::display(){    
+    DtoSubMesh& m = this->get_mesh();
+    
+    glUseProgram(m.shaderProgram);
+    this->color_draw();
+    
+    glBindVertexArray(this->get_VAO());
+
+    glDrawElements(GL_TRIANGLES, m.i_size, GL_UNSIGNED_BYTE, 0);
+    
+    glBindVertexArray(0);
 }

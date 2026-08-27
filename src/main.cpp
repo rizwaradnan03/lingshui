@@ -38,7 +38,9 @@ void GL_gpu(){
 void SYSTEM_init(){
     G_C_gl = new SINGLETON_C_gl();
     G_S_system = new SINGLETON_system();
+}
 
+void SYSTEM_start(){
     G_S_system->change_screen(WORLD_TRIAL);
 }
 
@@ -49,6 +51,8 @@ void openGL(){
     
     GL_window();
     GL_gpu();
+
+    SYSTEM_start();
 }
 
 int main() {

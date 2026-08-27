@@ -2,11 +2,13 @@
 
 RT_world::RT_world(): RenderType(){
     DtoSubMesh p_mesh;
-    p_mesh.w = 30;
-    p_mesh.h = 30;
+    p_mesh.w = 1.0f;
+    p_mesh.h = 1.0f;
     p_mesh.x = 0;
     p_mesh.y = 0;
-
+    p_mesh.shape = RECTANGLE;
+    p_mesh.color = {1.0f, 1.0f, 1.0f, 1.0f};
+    
     DtoSignatureLife p_life;
     p_life.health_point = 100;
     p_life.effects = std::vector<DtoEnumGlobalEffect>{
@@ -17,7 +19,8 @@ RT_world::RT_world(): RenderType(){
     p_body.mesh = p_mesh;
     p_body.life = p_life;
     
-    Body *player = new Body(p_body);
+    Body *init_player = new Body(p_body);
+    this->set_player(init_player);
 }
 
 RT_world::~RT_world(){
@@ -60,6 +63,7 @@ void RT_world::set_push_nodes(Uni* value){
 }
 
 void RT_world::execute(){
+    this->get_player()->execute();
     // for(uint16_t i = 0;i < this->get_bodies().size();i++){
     //     Body *b = this->get_bodies()[i];
     //     if(b == nullptr){
@@ -69,13 +73,13 @@ void RT_world::execute(){
     //     }
     // }
 
-    for(uint16_t i = 0;i < this->get_nodes().size();i++){
-        Uni *n = this->get_nodes()[i];
-        if(n == nullptr){
-            this->get_nodes().erase(this->get_nodes().begin() + i);
-            i--;
-        }else{
-            n->execute();
-        }
-    }
+    // for(uint16_t i = 0;i < this->get_nodes().size();i++){
+    //     Uni *n = this->get_nodes()[i];
+    //     if(n == nullptr){
+    //         this->get_nodes().erase(this->get_nodes().begin() + i);
+    //         i--;
+    //     }else{
+    //         n->execute();
+    //     }
+    // }
 }
