@@ -9,7 +9,8 @@ struct DtoSubMesh {
     // REQUIRED
     float x = 0, y = 0, w, h;
     DtoEnumGlobalShape shape;
-
+    bool is_render = true;
+    
     DtoGlobalPole pole;
     std::vector<float> color;
 

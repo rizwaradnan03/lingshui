@@ -1,15 +1,16 @@
+#include "config/c_pch.h"
 #include <signature/s_mesh.h>
 
 SIGNATURE_mesh::SIGNATURE_mesh(const DtoSubMesh& init){
     this->set_mesh(init);
-    
+
     float w_half = init.w / 2;
-    float h_half = init.h / 2;    
+    float h_half = init.h / 2;
 
     this->calculate_count_of_attribute();
 
     DtoSubMesh& m = this->get_mesh();
-    
+
     uint8_t x_exist = m.v_size / 2;
     uint8_t y_exist = m.v_size / 2;
     for(uint16_t i = 0;i < m.v_size;i++){
@@ -27,24 +28,24 @@ SIGNATURE_mesh::SIGNATURE_mesh(const DtoSubMesh& init){
             }else{
                 val = m.y + h_half;
             }
-            
+
             y_exist -= 1;
         }
-        
+
         m.vertices[i] = val;
     }
 
     this->calculate_ebo();
     this->init_shader_buffer();
 
-    for(uint8_t i = 0;i < m.v_size;i++){
-        std::cout << "VERT : " << m.vertices[i] << std::endl;
-    }
+    // for(uint8_t i = 0;i < m.v_size;i++){
+    //     std::cout << "VERT : " << m.vertices[i] << std::endl;
+    // }
 
-    for(uint8_t i = 0;i < m.i_size;i++){
-        std::cout << "INDICES : " << static_cast<int>(m.indices[i]) << std::endl;
-    }
-    
+    // for(uint8_t i = 0;i < m.i_size;i++){
+    //     std::cout << "INDICES : " << static_cast<int>(m.indices[i]) << std::endl;
+    // }
+
     this->process_VAO();
     this->process_VBO();
     this->process_EBO();
@@ -73,7 +74,7 @@ void SIGNATURE_mesh::process_VAO(){
     GLuint v;
     glGenVertexArrays(1, &v);
     this->set_VAO(v);
-    
+
     glBindVertexArray(this->get_VAO());
 }
 
@@ -115,31 +116,47 @@ void SIGNATURE_mesh::set_EBO(GLuint value){
 
 void SIGNATURE_mesh::process_EBO(){
     DtoSubMesh& m = this->get_mesh();
-    
+
     GLuint v;
     glGenBuffers(1, &v);
 
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, v);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, 6 * sizeof(uint8_t), m.indices, GL_STATIC_DRAW);
-    
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, m.i_size * sizeof(uint8_t), m.indices, GL_STATIC_DRAW);
+
     this->set_EBO(v);
 }
 
 void SIGNATURE_mesh::init_shader_buffer(){
     DtoSubMesh& m = this->get_mesh();
 
+    GLint success;
+    char log[512];
+
     m.vertexShader = glCreateShader(GL_VERTEX_SHADER);
     glShaderSource(m.vertexShader, 1, &constant_shader::vertexShaderSource, NULL);
     glCompileShader(m.vertexShader);
+
+    glGetShaderiv(m.vertexShader, GL_COMPILE_STATUS, &success);
+    if(!success){
+        glGetShaderInfoLog(m.vertexShader, 512, NULL, log); // ASSIGNING TO LOG!
+        std::cout << "VERTEX SHADER ERROR : " << log << std::endl;
+    }
 
     m.fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
     glShaderSource(m.fragmentShader, 1, &constant_shader::fragmentShaderSource, NULL);
     glCompileShader(m.fragmentShader);
 
+    glGetShaderiv(m.fragmentShader, GL_COMPILE_STATUS, &success);
+    if(!success){
+        glGetShaderInfoLog(m.fragmentShader, 512, NULL, log); // ASSIGNING TO LOG!
+        std::cout << "FRAGMENT SHADER ERROR : " << log << std::endl;
+    }
+
     m.shaderProgram = glCreateProgram();
     glAttachShader(m.shaderProgram, m.vertexShader);
     glAttachShader(m.shaderProgram, m.fragmentShader);
     glLinkProgram(m.shaderProgram);
+
 
     glDeleteShader(m.vertexShader);
     glDeleteShader(m.fragmentShader);
@@ -181,7 +198,7 @@ void SIGNATURE_mesh::gpu_base_smart(){
 void SIGNATURE_mesh::color_draw(){
     DtoSubMesh& m = this->get_mesh();
     std::vector<float> color = m.color;
-    
+
     int c_loc = glGetUniformLocation(m.shaderProgram, "objectColor");
     glUniform4f(c_loc, color[0], color[1], color[2], color[3]);
 }
@@ -203,16 +220,16 @@ void SIGNATURE_mesh::change_axist(DtoEnumAxist axist, float value){
     this->process_VBO();
 }
 
-void SIGNATURE_mesh::execute(){    
+void SIGNATURE_mesh::execute(){
     this->display();
 }
 
-void SIGNATURE_mesh::display(){    
+void SIGNATURE_mesh::display(){
     DtoSubMesh& m = this->get_mesh();
-    
+
     glUseProgram(m.shaderProgram);
     this->color_draw();
-    
+
     glBindVertexArray(this->get_VAO());
 
     glDrawElements(GL_TRIANGLES, m.i_size, GL_UNSIGNED_BYTE, 0);

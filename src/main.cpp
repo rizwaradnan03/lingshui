@@ -13,6 +13,7 @@ void GL_init(){
 }
 
 void GL_window(){
+    glfwWindowHintString(GLFW_WAYLAND_APP_ID, "my_opengl_app");
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);

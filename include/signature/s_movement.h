@@ -13,6 +13,7 @@ class SIGNATURE_movement {
         void set_mesh(SIGNATURE_mesh* value);
         
         void execute();
+        void gravity();
 
     private:
         SIGNATURE_mesh* p_mesh;
