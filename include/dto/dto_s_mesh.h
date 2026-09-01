@@ -19,6 +19,10 @@ struct DtoSubMesh {
     float vertices[255];
     uint8_t indices[255];
 
+    // PIXEL OF SCREEN VALUE !
+    float w_pixel;
+    float h_pixel;
+    
     GLuint vertexShader;
     GLuint fragmentShader;
     GLuint shaderProgram;

@@ -12,6 +12,9 @@ class SINGLETON_C_gl {
         
     private:
         GLFWwindow* window = nullptr;
+        
+        int default_width = 800;
+        int default_height = 600;
 };
 
 extern SINGLETON_C_gl* G_C_gl;

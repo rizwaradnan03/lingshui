@@ -130,6 +130,30 @@ lingshui_window/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/build
 .PHONY : lingshui_window/fast
 
+src/constants/ct_default.o: src/constants/ct_default.cpp.o
+.PHONY : src/constants/ct_default.o
+
+# target to build an object file
+src/constants/ct_default.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/constants/ct_default.cpp.o
+.PHONY : src/constants/ct_default.cpp.o
+
+src/constants/ct_default.i: src/constants/ct_default.cpp.i
+.PHONY : src/constants/ct_default.i
+
+# target to preprocess a source file
+src/constants/ct_default.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/constants/ct_default.cpp.i
+.PHONY : src/constants/ct_default.cpp.i
+
+src/constants/ct_default.s: src/constants/ct_default.cpp.s
+.PHONY : src/constants/ct_default.s
+
+# target to generate assembly for a file
+src/constants/ct_default.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/constants/ct_default.cpp.s
+.PHONY : src/constants/ct_default.cpp.s
+
 src/constants/ct_shader.o: src/constants/ct_shader.cpp.o
 .PHONY : src/constants/ct_shader.o
 
@@ -225,6 +249,30 @@ src/namespace/n_input.s: src/namespace/n_input.cpp.s
 src/namespace/n_input.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/namespace/n_input.cpp.s
 .PHONY : src/namespace/n_input.cpp.s
+
+src/namespace/n_physic.o: src/namespace/n_physic.cpp.o
+.PHONY : src/namespace/n_physic.o
+
+# target to build an object file
+src/namespace/n_physic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/namespace/n_physic.cpp.o
+.PHONY : src/namespace/n_physic.cpp.o
+
+src/namespace/n_physic.i: src/namespace/n_physic.cpp.i
+.PHONY : src/namespace/n_physic.i
+
+# target to preprocess a source file
+src/namespace/n_physic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/namespace/n_physic.cpp.i
+.PHONY : src/namespace/n_physic.cpp.i
+
+src/namespace/n_physic.s: src/namespace/n_physic.cpp.s
+.PHONY : src/namespace/n_physic.s
+
+# target to generate assembly for a file
+src/namespace/n_physic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/namespace/n_physic.cpp.s
+.PHONY : src/namespace/n_physic.cpp.s
 
 src/namespace/n_shape.o: src/namespace/n_shape.cpp.o
 .PHONY : src/namespace/n_shape.o
@@ -499,6 +547,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... lingshui_window"
+	@echo "... src/constants/ct_default.o"
+	@echo "... src/constants/ct_default.i"
+	@echo "... src/constants/ct_default.s"
 	@echo "... src/constants/ct_shader.o"
 	@echo "... src/constants/ct_shader.i"
 	@echo "... src/constants/ct_shader.s"
@@ -511,6 +562,9 @@ help:
 	@echo "... src/namespace/n_input.o"
 	@echo "... src/namespace/n_input.i"
 	@echo "... src/namespace/n_input.s"
+	@echo "... src/namespace/n_physic.o"
+	@echo "... src/namespace/n_physic.i"
+	@echo "... src/namespace/n_physic.s"
 	@echo "... src/namespace/n_shape.o"
 	@echo "... src/namespace/n_shape.i"
 	@echo "... src/namespace/n_shape.s"

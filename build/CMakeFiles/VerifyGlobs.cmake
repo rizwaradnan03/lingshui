@@ -30,9 +30,11 @@ endif()
 # SOURCES at CMakeLists.txt:25 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/*.cpp")
 set(OLD_GLOB
+  "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/constants/ct_default.cpp"
   "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/constants/ct_shader.cpp"
   "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/main.cpp"
   "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/namespace/n_input.cpp"
+  "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/namespace/n_physic.cpp"
   "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/namespace/n_shape.cpp"
   "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/body/body.cpp"
   "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/render-type/render_type.cpp"

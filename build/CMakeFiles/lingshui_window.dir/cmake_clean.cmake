@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lingshui_window.dir/link.d"
+  "CMakeFiles/lingshui_window.dir/src/constants/ct_default.cpp.o"
+  "CMakeFiles/lingshui_window.dir/src/constants/ct_default.cpp.o.d"
   "CMakeFiles/lingshui_window.dir/src/constants/ct_shader.cpp.o"
   "CMakeFiles/lingshui_window.dir/src/constants/ct_shader.cpp.o.d"
   "CMakeFiles/lingshui_window.dir/src/glad.c.o"
@@ -8,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/lingshui_window.dir/src/main.cpp.o.d"
   "CMakeFiles/lingshui_window.dir/src/namespace/n_input.cpp.o"
   "CMakeFiles/lingshui_window.dir/src/namespace/n_input.cpp.o.d"
+  "CMakeFiles/lingshui_window.dir/src/namespace/n_physic.cpp.o"
+  "CMakeFiles/lingshui_window.dir/src/namespace/n_physic.cpp.o.d"
   "CMakeFiles/lingshui_window.dir/src/namespace/n_shape.cpp.o"
   "CMakeFiles/lingshui_window.dir/src/namespace/n_shape.cpp.o.d"
   "CMakeFiles/lingshui_window.dir/src/nodes/2d/body/body.cpp.o"

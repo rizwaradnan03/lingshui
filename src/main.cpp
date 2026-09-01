@@ -1,8 +1,9 @@
-#include "config/c_pch.h"
+#include <config/c_pch.h>
+#include <constants/ct_default.h>
 #include <singleton/st_gl.h>
 #include <singleton/st_system.h>
 
-void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
+void framebuffer_size_callback(GLFWwindow* window, int width, int height) { // JIKA WINDOW MENGECIL DAN MEMBESAR
     glViewport(0, 0, width, height);
 }
 
@@ -18,7 +19,7 @@ void GL_window(){
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-    G_C_gl->set_window(glfwCreateWindow(800, 600, "Lingshui", NULL, NULL));
+    G_C_gl->set_window(glfwCreateWindow(dft::get_window_width(), dft::get_window_height(), "Lingshui", NULL, NULL));
     GLFWwindow* win = G_C_gl->get_window();
     
     if (win == NULL) {
@@ -45,7 +46,7 @@ void SYSTEM_start(){
     G_S_system->change_screen(WORLD_TRIAL);
 }
 
-void openGL(){
+void init(){
     GL_init();
 
     SYSTEM_init();
@@ -57,7 +58,7 @@ void openGL(){
 }
 
 int main() {
-    openGL();
+    init();
 
     GLFWwindow* win = G_C_gl->get_window();
     

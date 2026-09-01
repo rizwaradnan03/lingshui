@@ -1,22 +1,23 @@
-#include "config/c_pch.h"
 #include <signature/s_mesh.h>
 
 SIGNATURE_mesh::SIGNATURE_mesh(const DtoSubMesh& init){
     this->set_mesh(init);
+    DtoSubMesh& m = this->get_mesh();
 
-    float w_half = init.w / 2;
-    float h_half = init.h / 2;
+    this->set_w_pixel(static_cast<float>(m.w / dft::get_window_width()));
+    this->set_h_pixel(static_cast<float>(m.h / dft::get_window_height()));
+    
+    float w_half = (init.w / 2.0f);
+    float h_half = init.h / 2.0f;
 
     this->calculate_count_of_attribute();
 
-    DtoSubMesh& m = this->get_mesh();
-
     uint8_t x_exist = m.v_size / 2;
     uint8_t y_exist = m.v_size / 2;
-    for(uint16_t i = 0;i < m.v_size;i++){
+    for(uint16_t i = 0; i < m.v_size; i++){
         float val;
         if((i + 2) % 2 == 0){
-            if(x_exist == m.v_size / 2 || (x_exist != m.v_size / 2 && x_exist < (m.v_size / 2) / 2)){ // be the negative
+            if(x_exist == m.v_size / 2 || (x_exist != m.v_size / 2 && x_exist < (m.v_size / 2) / 2)){ 
                 val = m.x - w_half;
             }else{
                 val = m.x + w_half;
@@ -28,7 +29,6 @@ SIGNATURE_mesh::SIGNATURE_mesh(const DtoSubMesh& init){
             }else{
                 val = m.y + h_half;
             }
-
             y_exist -= 1;
         }
 
@@ -37,15 +37,6 @@ SIGNATURE_mesh::SIGNATURE_mesh(const DtoSubMesh& init){
 
     this->calculate_ebo();
     this->init_shader_buffer();
-
-    // for(uint8_t i = 0;i < m.v_size;i++){
-    //     std::cout << "VERT : " << m.vertices[i] << std::endl;
-    // }
-
-    // for(uint8_t i = 0;i < m.i_size;i++){
-    //     std::cout << "INDICES : " << static_cast<int>(m.indices[i]) << std::endl;
-    // }
-
     this->process_VAO();
     this->process_VBO();
     this->process_EBO();
@@ -62,69 +53,84 @@ SIGNATURE_mesh::~SIGNATURE_mesh(){
     glDeleteProgram(m.shaderProgram);
 }
 
-GLuint SIGNATURE_mesh::get_VAO(){
-    return this->VAO;
-}
-
-void SIGNATURE_mesh::set_VAO(GLuint value){
-    this->VAO = value;
-}
+GLuint SIGNATURE_mesh::get_VAO(){ return this->VAO; }
+void SIGNATURE_mesh::set_VAO(GLuint value){ this->VAO = value; }
 
 void SIGNATURE_mesh::process_VAO(){
     GLuint v;
     glGenVertexArrays(1, &v);
     this->set_VAO(v);
-
     glBindVertexArray(this->get_VAO());
 }
 
-GLuint SIGNATURE_mesh::get_VBO(){
-    return this->VBO;
-}
-
-void SIGNATURE_mesh::set_VBO(GLuint value){
-    this->VBO = value;
-}
+GLuint SIGNATURE_mesh::get_VBO(){ return this->VBO; }
+void SIGNATURE_mesh::set_VBO(GLuint value){ this->VBO = value; }
 
 void SIGNATURE_mesh::process_VBO(){
     DtoSubMesh& m = this->get_mesh();
 
-    if(this->get_VBO() == 0){ // CREATE BUFFER FOR THE FIRST TIME
+    if(this->get_VBO() == 0){
         glGenBuffers(1, &this->VBO);
     }
 
-    // CALL BUFFER TO USE THE VERTICES VALUE
     glBindBuffer(GL_ARRAY_BUFFER, this->VBO);
     glBufferData(GL_ARRAY_BUFFER, m.v_size * sizeof(float), m.vertices, GL_STATIC_DRAW);
 }
 
-DtoSubMesh& SIGNATURE_mesh::get_mesh(){
-    return this->mesh;
-}
-
-void SIGNATURE_mesh::set_mesh(DtoSubMesh value){
-    this->mesh = value;
-}
-
-GLuint SIGNATURE_mesh::get_EBO(){
-    return this->EBO;
-}
-
-void SIGNATURE_mesh::set_EBO(GLuint value){
-    this->EBO = value;
-}
+GLuint SIGNATURE_mesh::get_EBO(){ return this->EBO; }
+void SIGNATURE_mesh::set_EBO(GLuint value){ this->EBO = value; }
 
 void SIGNATURE_mesh::process_EBO(){
     DtoSubMesh& m = this->get_mesh();
 
-    GLuint v;
-    glGenBuffers(1, &v);
+    if(this->get_EBO() == 0){
+        glGenBuffers(1, &this->EBO);
+    }
 
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, v);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, this->EBO);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, m.i_size * sizeof(uint8_t), m.indices, GL_STATIC_DRAW);
-
-    this->set_EBO(v);
 }
+
+float SIGNATURE_mesh::get_x(){ return this->get_mesh().x; }
+void SIGNATURE_mesh::set_x(float value){ this->get_mesh().x = value; }
+float SIGNATURE_mesh::get_y(){ return this->get_mesh().y; }
+void SIGNATURE_mesh::set_y(float value){ this->get_mesh().y = value; }
+float SIGNATURE_mesh::get_w(){ return this->get_mesh().w; }
+void SIGNATURE_mesh::set_w(float value){ this->get_mesh().w = value; }
+float SIGNATURE_mesh::get_h(){ return this->get_mesh().h; }
+void SIGNATURE_mesh::set_h(float value){ this->get_mesh().h = value; }
+
+DtoGlobalPole& SIGNATURE_mesh::get_pole(){ return this->get_mesh().pole; }
+void SIGNATURE_mesh::set_pole(DtoGlobalPole value){ this->get_mesh().pole = value; }
+
+uint8_t SIGNATURE_mesh::get_v_size(){ return this->get_mesh().v_size; }
+void SIGNATURE_mesh::set_v_size(uint8_t value){ this->get_mesh().v_size = value; }
+uint8_t SIGNATURE_mesh::get_i_size(){ return this->get_mesh().i_size; }
+void SIGNATURE_mesh::set_i_size(uint8_t value){ this->get_mesh().i_size = value; }
+
+float SIGNATURE_mesh::get_w_pixel(){
+    return this->get_mesh().w_pixel;
+}
+
+void SIGNATURE_mesh::set_w_pixel(float value){
+    this->get_mesh().w_pixel = value;
+}
+
+float SIGNATURE_mesh::get_h_pixel(){
+    return this->get_mesh().h_pixel;
+}
+
+void SIGNATURE_mesh::set_h_pixel(float value){
+    this->get_mesh().h_pixel = value;
+}
+
+float SIGNATURE_mesh::get_top(){ return this->get_y() + (this->get_h() / 2); }
+float SIGNATURE_mesh::get_bottom(){ return this->get_y() - (this->get_h() / 2); }
+float SIGNATURE_mesh::get_right(){ return this->get_x() + (this->get_w() / 2); }
+float SIGNATURE_mesh::get_left(){ return this->get_x() - (this->get_w() / 2); }
+
+DtoSubMesh& SIGNATURE_mesh::get_mesh(){ return this->mesh; }
+void SIGNATURE_mesh::set_mesh(DtoSubMesh value){ this->mesh = value; }
 
 void SIGNATURE_mesh::init_shader_buffer(){
     DtoSubMesh& m = this->get_mesh();
@@ -138,7 +144,7 @@ void SIGNATURE_mesh::init_shader_buffer(){
 
     glGetShaderiv(m.vertexShader, GL_COMPILE_STATUS, &success);
     if(!success){
-        glGetShaderInfoLog(m.vertexShader, 512, NULL, log); // ASSIGNING TO LOG!
+        glGetShaderInfoLog(m.vertexShader, 512, NULL, log);
         std::cout << "VERTEX SHADER ERROR : " << log << std::endl;
     }
 
@@ -148,7 +154,7 @@ void SIGNATURE_mesh::init_shader_buffer(){
 
     glGetShaderiv(m.fragmentShader, GL_COMPILE_STATUS, &success);
     if(!success){
-        glGetShaderInfoLog(m.fragmentShader, 512, NULL, log); // ASSIGNING TO LOG!
+        glGetShaderInfoLog(m.fragmentShader, 512, NULL, log);
         std::cout << "FRAGMENT SHADER ERROR : " << log << std::endl;
     }
 
@@ -156,7 +162,6 @@ void SIGNATURE_mesh::init_shader_buffer(){
     glAttachShader(m.shaderProgram, m.vertexShader);
     glAttachShader(m.shaderProgram, m.fragmentShader);
     glLinkProgram(m.shaderProgram);
-
 
     glDeleteShader(m.vertexShader);
     glDeleteShader(m.fragmentShader);
@@ -166,7 +171,7 @@ void SIGNATURE_mesh::calculate_ebo(){
     DtoSubMesh& m = this->get_mesh();
 
     uint8_t dec_by = 0;
-    for(uint8_t i = 0;i < m.i_size;i++){
+    for(uint8_t i = 0; i < m.i_size; i++){
         if(i % 3 == 0){
             dec_by = i / 3;
         }else{
@@ -179,6 +184,7 @@ void SIGNATURE_mesh::calculate_ebo(){
     }
 }
 
+// Perhitungan atribut asli kamu
 void SIGNATURE_mesh::calculate_count_of_attribute(){
     DtoSubMesh& m = this->get_mesh();
 
@@ -190,17 +196,20 @@ void SIGNATURE_mesh::gpu_base_smart(){
     glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(float), (void*) 0);
     glEnableVertexAttribArray(0);
 
-    glBindVertexArray(0); // UNBINDING VAO!
+    glBindVertexArray(0);
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 }
 
 void SIGNATURE_mesh::color_draw(){
     DtoSubMesh& m = this->get_mesh();
-    std::vector<float> color = m.color;
+    
+    if (m.color.size() < 4) {
+        m.color = {1.0f, 1.0f, 1.0f, 1.0f};
+    }
 
     int c_loc = glGetUniformLocation(m.shaderProgram, "objectColor");
-    glUniform4f(c_loc, color[0], color[1], color[2], color[3]);
+    glUniform4f(c_loc, m.color[0], m.color[1], m.color[2], m.color[3]);
 }
 
 void SIGNATURE_mesh::change_axist(DtoEnumAxist axist, float value){
@@ -211,7 +220,7 @@ void SIGNATURE_mesh::change_axist(DtoEnumAxist axist, float value){
         div_by = 0;
     }
 
-    for(uint8_t i = 0;i < m.v_size;i++){
+    for(uint8_t i = 0; i < m.v_size; i++){
         if((i + 2) % 2 == div_by){
             m.vertices[i] += value;
         }
@@ -233,6 +242,6 @@ void SIGNATURE_mesh::display(){
     glBindVertexArray(this->get_VAO());
 
     glDrawElements(GL_TRIANGLES, m.i_size, GL_UNSIGNED_BYTE, 0);
-    
+
     glBindVertexArray(0);
 }
