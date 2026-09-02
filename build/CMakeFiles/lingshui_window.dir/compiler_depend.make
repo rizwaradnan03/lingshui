@@ -561,6 +561,7 @@ CMakeFiles/lingshui_window.dir/src/namespace/n_input.cpp.o: /home/rizwarmcgovney
 
 CMakeFiles/lingshui_window.dir/src/namespace/n_physic.cpp.o: /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/namespace/n_physic.cpp \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/config/c_pch.h \
+  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/constants/ct_default.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/constants/ct_shader.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_axist.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_pole.h \
@@ -571,6 +572,7 @@ CMakeFiles/lingshui_window.dir/src/namespace/n_physic.cpp.o: /home/rizwarmcgovne
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/namespace/n_physic.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/namespace/n_shape.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/signature/s_mesh.h \
+  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/singleton/st_gl.h \
   /usr/include/GLFW/glfw3.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -1035,6 +1037,7 @@ CMakeFiles/lingshui_window.dir/src/namespace/n_shape.cpp.o: /home/rizwarmcgovney
 
 CMakeFiles/lingshui_window.dir/src/nodes/2d/body/body.cpp.o: /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/body/body.cpp \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/config/c_pch.h \
+  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/constants/ct_default.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/constants/ct_shader.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_axist.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_effect.h \
@@ -1283,6 +1286,7 @@ CMakeFiles/lingshui_window.dir/src/nodes/2d/body/body.cpp.o: /home/rizwarmcgovne
 
 CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/render_type.cpp.o: /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/render-type/render_type.cpp \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/config/c_pch.h \
+  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/constants/ct_default.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/constants/ct_shader.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_axist.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_pole.h \
@@ -1295,6 +1299,7 @@ CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/render_type.cpp.o: /home
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/nodes/2d/render-type/render_type.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/nodes/2d/uni/uni.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/signature/s_mesh.h \
+  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/singleton/st_gl.h \
   /usr/include/GLFW/glfw3.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -1525,6 +1530,7 @@ CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/render_type.cpp.o: /home
 
 CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/rt_world.cpp.o: /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/render-type/rt_world.cpp \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/config/c_pch.h \
+  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/constants/ct_default.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/constants/ct_shader.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_axist.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_effect.h \
@@ -1777,6 +1783,7 @@ CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/rt_world.cpp.o: /home/ri
 
 CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni.cpp.o: /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/uni/uni.cpp \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/config/c_pch.h \
+  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/constants/ct_default.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/constants/ct_shader.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_axist.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_pole.h \
@@ -1788,6 +1795,7 @@ CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni.cpp.o: /home/rizwarmcgovney/
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/namespace/n_shape.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/nodes/2d/uni/uni.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/signature/s_mesh.h \
+  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/singleton/st_gl.h \
   /usr/include/GLFW/glfw3.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -2018,6 +2026,7 @@ CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni.cpp.o: /home/rizwarmcgovney/
 
 CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni_wear.cpp.o: /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/uni/uni_wear.cpp \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/config/c_pch.h \
+  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/constants/ct_default.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/constants/ct_shader.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_axist.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_pole.h \
@@ -2030,6 +2039,7 @@ CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni_wear.cpp.o: /home/rizwarmcgo
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/nodes/2d/uni/uni.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/nodes/2d/uni/uni_wear.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/signature/s_mesh.h \
+  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/singleton/st_gl.h \
   /usr/include/GLFW/glfw3.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -2495,6 +2505,7 @@ CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.o: /home/rizwarmcgovney/
 
 CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.o: /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_mesh.cpp \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/config/c_pch.h \
+  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/constants/ct_default.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/constants/ct_shader.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_axist.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_pole.h \
@@ -2504,6 +2515,7 @@ CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.o: /home/rizwarmcgovney/
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/external/glad/glad.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/namespace/n_shape.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/signature/s_mesh.h \
+  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/singleton/st_gl.h \
   /usr/include/GLFW/glfw3.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -2734,6 +2746,7 @@ CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.o: /home/rizwarmcgovney/
 
 CMakeFiles/lingshui_window.dir/src/signature/s_movement.cpp.o: /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_movement.cpp \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/config/c_pch.h \
+  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/constants/ct_default.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/constants/ct_shader.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_axist.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_pole.h \
@@ -3210,6 +3223,7 @@ CMakeFiles/lingshui_window.dir/src/singleton/st_gl.cpp.o: /home/rizwarmcgovney/D
 
 CMakeFiles/lingshui_window.dir/src/singleton/st_system.cpp.o: /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/singleton/st_system.cpp \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/config/c_pch.h \
+  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/constants/ct_default.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/constants/ct_shader.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_axist.h \
   /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_effect.h \

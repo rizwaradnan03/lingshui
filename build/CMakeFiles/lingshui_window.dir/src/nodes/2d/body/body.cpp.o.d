@@ -169,7 +169,7 @@ CMakeFiles/lingshui_window.dir/src/nodes/2d/body/body.cpp.o: \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/constants/ct_default.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_axist.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/namespace/n_shape.h \
+ /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/singleton/st_gl.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/signature/s_life.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/signature/s_movement.h \
- /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/namespace/n_input.h \
- /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/singleton/st_gl.h
+ /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/namespace/n_input.h

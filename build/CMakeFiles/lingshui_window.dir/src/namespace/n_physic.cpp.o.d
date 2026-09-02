@@ -164,4 +164,5 @@ CMakeFiles/lingshui_window.dir/src/namespace/n_physic.cpp.o: \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_pole.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_shape.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_axist.h \
- /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/namespace/n_shape.h
+ /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/namespace/n_shape.h \
+ /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/singleton/st_gl.h

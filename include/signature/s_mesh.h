@@ -7,6 +7,7 @@
 #include <dto/dto_s_mesh.h>
 #include <dto/dto_g_axist.h>
 #include <namespace/n_shape.h>
+#include <singleton/st_gl.h>
 
 class SIGNATURE_mesh {
     public:
@@ -66,7 +67,8 @@ class SIGNATURE_mesh {
         float get_bottom();
         float get_right();
         float get_left();
-        
+
+        void buffer_checker();
         void execute();
 
     private:

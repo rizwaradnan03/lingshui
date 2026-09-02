@@ -1,3 +1,5 @@
+#include "constants/ct_default.h"
+#include "singleton/st_gl.h"
 #include <signature/s_mesh.h>
 
 SIGNATURE_mesh::SIGNATURE_mesh(const DtoSubMesh& init){
@@ -234,6 +236,8 @@ void SIGNATURE_mesh::execute(){
 }
 
 void SIGNATURE_mesh::display(){
+    this->buffer_checker();
+    
     DtoSubMesh& m = this->get_mesh();
 
     glUseProgram(m.shaderProgram);
@@ -244,4 +248,21 @@ void SIGNATURE_mesh::display(){
     glDrawElements(GL_TRIANGLES, m.i_size, GL_UNSIGNED_BYTE, 0);
 
     glBindVertexArray(0);
+}
+
+void SIGNATURE_mesh::buffer_checker(){
+    SINGLETON_C_gl *gl = G_C_gl;
+    
+    bool resize = gl->get_resized();
+    if(resize == false){
+        return;
+    }
+    
+    DtoSubMesh& value = this->get_mesh();
+    
+    uint16_t w_gap = ((dft::get_window_width() - gl->get_current_width()) * value.w_pixel) * -1;
+    uint16_t h_gap = ((dft::get_window_height() - gl->get_current_height()) * value.h_pixel) * -1;
+    
+    this->set_w(this->get_w() + w_gap);
+    this->set_h(this->get_h() + h_gap);
 }

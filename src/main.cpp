@@ -5,6 +5,16 @@
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) { // JIKA WINDOW MENGECIL DAN MEMBESAR
     glViewport(0, 0, width, height);
+    G_C_gl->set_current_width(width);
+    G_C_gl->set_current_width(height);
+
+    std::cout << "MACHIEUM" << G_C_gl->get_initialize() << std::endl;
+    
+    if(G_C_gl->get_initialize() == true){
+        G_C_gl->set_resized(true);
+    }else{
+        G_C_gl->set_initialize(true);
+    }
 }
 
 void GL_init(){
@@ -73,6 +83,8 @@ int main() {
 
         // THE WRITING SECTION HERE!
         G_S_system->get_render_screen()->execute();
+
+        G_C_gl->set_resized(false);
         
         // Swap Buffers & Poll Events
         glfwSwapBuffers(win);
