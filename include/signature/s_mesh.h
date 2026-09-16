@@ -62,14 +62,20 @@ class SIGNATURE_mesh {
 
         float get_h_pixel();
         void set_h_pixel(float value);
+
+        bool get_available_direction();
+        void set_available_direction(bool value);
         
         float get_top();
         float get_bottom();
         float get_right();
         float get_left();
 
-        void buffer_checker();
         void execute();
+        void buffer_checker();
+
+        // PHYSIC
+        void physic();
 
     private:
         GLuint VAO = 0, VBO = 0, EBO = 0;

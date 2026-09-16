@@ -240,10 +240,38 @@ CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni_wear.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni_wear.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/uni/uni_wear.cpp -o CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni_wear.cpp.s
 
+CMakeFiles/lingshui_window.dir/src/signature/physical/s_movement.cpp.o: CMakeFiles/lingshui_window.dir/flags.make
+CMakeFiles/lingshui_window.dir/src/signature/physical/s_movement.cpp.o: /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/physical/s_movement.cpp
+CMakeFiles/lingshui_window.dir/src/signature/physical/s_movement.cpp.o: CMakeFiles/lingshui_window.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/lingshui_window.dir/src/signature/physical/s_movement.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lingshui_window.dir/src/signature/physical/s_movement.cpp.o -MF CMakeFiles/lingshui_window.dir/src/signature/physical/s_movement.cpp.o.d -o CMakeFiles/lingshui_window.dir/src/signature/physical/s_movement.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/physical/s_movement.cpp
+
+CMakeFiles/lingshui_window.dir/src/signature/physical/s_movement.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lingshui_window.dir/src/signature/physical/s_movement.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/physical/s_movement.cpp > CMakeFiles/lingshui_window.dir/src/signature/physical/s_movement.cpp.i
+
+CMakeFiles/lingshui_window.dir/src/signature/physical/s_movement.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lingshui_window.dir/src/signature/physical/s_movement.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/physical/s_movement.cpp -o CMakeFiles/lingshui_window.dir/src/signature/physical/s_movement.cpp.s
+
+CMakeFiles/lingshui_window.dir/src/signature/physical/s_physic.cpp.o: CMakeFiles/lingshui_window.dir/flags.make
+CMakeFiles/lingshui_window.dir/src/signature/physical/s_physic.cpp.o: /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/physical/s_physic.cpp
+CMakeFiles/lingshui_window.dir/src/signature/physical/s_physic.cpp.o: CMakeFiles/lingshui_window.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/lingshui_window.dir/src/signature/physical/s_physic.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lingshui_window.dir/src/signature/physical/s_physic.cpp.o -MF CMakeFiles/lingshui_window.dir/src/signature/physical/s_physic.cpp.o.d -o CMakeFiles/lingshui_window.dir/src/signature/physical/s_physic.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/physical/s_physic.cpp
+
+CMakeFiles/lingshui_window.dir/src/signature/physical/s_physic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lingshui_window.dir/src/signature/physical/s_physic.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/physical/s_physic.cpp > CMakeFiles/lingshui_window.dir/src/signature/physical/s_physic.cpp.i
+
+CMakeFiles/lingshui_window.dir/src/signature/physical/s_physic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lingshui_window.dir/src/signature/physical/s_physic.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/physical/s_physic.cpp -o CMakeFiles/lingshui_window.dir/src/signature/physical/s_physic.cpp.s
+
 CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.o: CMakeFiles/lingshui_window.dir/flags.make
 CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.o: /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_life.cpp
 CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.o: CMakeFiles/lingshui_window.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.o -MF CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.o.d -o CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_life.cpp
 
 CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.i: cmake_force
@@ -257,7 +285,7 @@ CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.s: cmake_force
 CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.o: CMakeFiles/lingshui_window.dir/flags.make
 CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.o: /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_mesh.cpp
 CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.o: CMakeFiles/lingshui_window.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.o -MF CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.o.d -o CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_mesh.cpp
 
 CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.i: cmake_force
@@ -271,7 +299,7 @@ CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.s: cmake_force
 CMakeFiles/lingshui_window.dir/src/signature/s_movement.cpp.o: CMakeFiles/lingshui_window.dir/flags.make
 CMakeFiles/lingshui_window.dir/src/signature/s_movement.cpp.o: /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_movement.cpp
 CMakeFiles/lingshui_window.dir/src/signature/s_movement.cpp.o: CMakeFiles/lingshui_window.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/lingshui_window.dir/src/signature/s_movement.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/lingshui_window.dir/src/signature/s_movement.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lingshui_window.dir/src/signature/s_movement.cpp.o -MF CMakeFiles/lingshui_window.dir/src/signature/s_movement.cpp.o.d -o CMakeFiles/lingshui_window.dir/src/signature/s_movement.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_movement.cpp
 
 CMakeFiles/lingshui_window.dir/src/signature/s_movement.cpp.i: cmake_force
@@ -285,7 +313,7 @@ CMakeFiles/lingshui_window.dir/src/signature/s_movement.cpp.s: cmake_force
 CMakeFiles/lingshui_window.dir/src/singleton/st_gl.cpp.o: CMakeFiles/lingshui_window.dir/flags.make
 CMakeFiles/lingshui_window.dir/src/singleton/st_gl.cpp.o: /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/singleton/st_gl.cpp
 CMakeFiles/lingshui_window.dir/src/singleton/st_gl.cpp.o: CMakeFiles/lingshui_window.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/lingshui_window.dir/src/singleton/st_gl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/lingshui_window.dir/src/singleton/st_gl.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lingshui_window.dir/src/singleton/st_gl.cpp.o -MF CMakeFiles/lingshui_window.dir/src/singleton/st_gl.cpp.o.d -o CMakeFiles/lingshui_window.dir/src/singleton/st_gl.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/singleton/st_gl.cpp
 
 CMakeFiles/lingshui_window.dir/src/singleton/st_gl.cpp.i: cmake_force
@@ -299,7 +327,7 @@ CMakeFiles/lingshui_window.dir/src/singleton/st_gl.cpp.s: cmake_force
 CMakeFiles/lingshui_window.dir/src/singleton/st_system.cpp.o: CMakeFiles/lingshui_window.dir/flags.make
 CMakeFiles/lingshui_window.dir/src/singleton/st_system.cpp.o: /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/singleton/st_system.cpp
 CMakeFiles/lingshui_window.dir/src/singleton/st_system.cpp.o: CMakeFiles/lingshui_window.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/lingshui_window.dir/src/singleton/st_system.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/lingshui_window.dir/src/singleton/st_system.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lingshui_window.dir/src/singleton/st_system.cpp.o -MF CMakeFiles/lingshui_window.dir/src/singleton/st_system.cpp.o.d -o CMakeFiles/lingshui_window.dir/src/singleton/st_system.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/singleton/st_system.cpp
 
 CMakeFiles/lingshui_window.dir/src/singleton/st_system.cpp.i: cmake_force
@@ -324,6 +352,8 @@ lingshui_window_OBJECTS = \
 "CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/rt_world.cpp.o" \
 "CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni.cpp.o" \
 "CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni_wear.cpp.o" \
+"CMakeFiles/lingshui_window.dir/src/signature/physical/s_movement.cpp.o" \
+"CMakeFiles/lingshui_window.dir/src/signature/physical/s_physic.cpp.o" \
 "CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.o" \
 "CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.o" \
 "CMakeFiles/lingshui_window.dir/src/signature/s_movement.cpp.o" \
@@ -345,6 +375,8 @@ lingshui_window: CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/render_
 lingshui_window: CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/rt_world.cpp.o
 lingshui_window: CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni.cpp.o
 lingshui_window: CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni_wear.cpp.o
+lingshui_window: CMakeFiles/lingshui_window.dir/src/signature/physical/s_movement.cpp.o
+lingshui_window: CMakeFiles/lingshui_window.dir/src/signature/physical/s_physic.cpp.o
 lingshui_window: CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.o
 lingshui_window: CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.o
 lingshui_window: CMakeFiles/lingshui_window.dir/src/signature/s_movement.cpp.o
@@ -356,7 +388,7 @@ lingshui_window: /usr/lib/libglfw.so.3.5
 lingshui_window: /usr/lib/libGLX.so
 lingshui_window: /usr/lib/libOpenGL.so
 lingshui_window: CMakeFiles/lingshui_window.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable lingshui_window"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable lingshui_window"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lingshui_window.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

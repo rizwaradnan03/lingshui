@@ -16,6 +16,8 @@ lingshui_window: \
   CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/rt_world.cpp.o \
   CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni.cpp.o \
   CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni_wear.cpp.o \
+  CMakeFiles/lingshui_window.dir/src/signature/physical/s_movement.cpp.o \
+  CMakeFiles/lingshui_window.dir/src/signature/physical/s_physic.cpp.o \
   CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.o \
   CMakeFiles/lingshui_window.dir/src/signature/s_mesh.cpp.o \
   CMakeFiles/lingshui_window.dir/src/signature/s_movement.cpp.o \
@@ -98,6 +100,10 @@ CMakeFiles/lingshui_window.dir/src/nodes/2d/render-type/rt_world.cpp.o:
 CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni.cpp.o:
 
 CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni_wear.cpp.o:
+
+CMakeFiles/lingshui_window.dir/src/signature/physical/s_movement.cpp.o:
+
+CMakeFiles/lingshui_window.dir/src/signature/physical/s_physic.cpp.o:
 
 CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.o:
 

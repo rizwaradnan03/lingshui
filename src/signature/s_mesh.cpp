@@ -1,5 +1,3 @@
-#include "constants/ct_default.h"
-#include "singleton/st_gl.h"
 #include <signature/s_mesh.h>
 
 SIGNATURE_mesh::SIGNATURE_mesh(const DtoSubMesh& init){
@@ -231,7 +229,7 @@ void SIGNATURE_mesh::change_axist(DtoEnumAxist axist, float value){
     this->process_VBO();
 }
 
-void SIGNATURE_mesh::execute(){
+void SIGNATURE_mesh::execute(){    
     this->display();
 }
 

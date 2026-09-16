@@ -73,6 +73,18 @@
 },
 {
   "directory": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build",
+  "command": "/usr/bin/c++  -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/external  -g -O0 -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++17 -o CMakeFiles/lingshui_window.dir/src/signature/physical/s_movement.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/physical/s_movement.cpp",
+  "file": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/physical/s_movement.cpp",
+  "output": "CMakeFiles/lingshui_window.dir/src/signature/physical/s_movement.cpp.o"
+},
+{
+  "directory": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build",
+  "command": "/usr/bin/c++  -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/external  -g -O0 -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++17 -o CMakeFiles/lingshui_window.dir/src/signature/physical/s_physic.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/physical/s_physic.cpp",
+  "file": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/physical/s_physic.cpp",
+  "output": "CMakeFiles/lingshui_window.dir/src/signature/physical/s_physic.cpp.o"
+},
+{
+  "directory": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/build",
   "command": "/usr/bin/c++  -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include -I/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/external  -g -O0 -fsanitize=address -fno-omit-frame-pointer -g -std=gnu++17 -o CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.o -c /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_life.cpp",
   "file": "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_life.cpp",
   "output": "CMakeFiles/lingshui_window.dir/src/signature/s_life.cpp.o"

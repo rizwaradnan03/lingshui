@@ -418,6 +418,54 @@ src/nodes/2d/uni/uni_wear.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/nodes/2d/uni/uni_wear.cpp.s
 .PHONY : src/nodes/2d/uni/uni_wear.cpp.s
 
+src/signature/physical/s_movement.o: src/signature/physical/s_movement.cpp.o
+.PHONY : src/signature/physical/s_movement.o
+
+# target to build an object file
+src/signature/physical/s_movement.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/signature/physical/s_movement.cpp.o
+.PHONY : src/signature/physical/s_movement.cpp.o
+
+src/signature/physical/s_movement.i: src/signature/physical/s_movement.cpp.i
+.PHONY : src/signature/physical/s_movement.i
+
+# target to preprocess a source file
+src/signature/physical/s_movement.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/signature/physical/s_movement.cpp.i
+.PHONY : src/signature/physical/s_movement.cpp.i
+
+src/signature/physical/s_movement.s: src/signature/physical/s_movement.cpp.s
+.PHONY : src/signature/physical/s_movement.s
+
+# target to generate assembly for a file
+src/signature/physical/s_movement.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/signature/physical/s_movement.cpp.s
+.PHONY : src/signature/physical/s_movement.cpp.s
+
+src/signature/physical/s_physic.o: src/signature/physical/s_physic.cpp.o
+.PHONY : src/signature/physical/s_physic.o
+
+# target to build an object file
+src/signature/physical/s_physic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/signature/physical/s_physic.cpp.o
+.PHONY : src/signature/physical/s_physic.cpp.o
+
+src/signature/physical/s_physic.i: src/signature/physical/s_physic.cpp.i
+.PHONY : src/signature/physical/s_physic.i
+
+# target to preprocess a source file
+src/signature/physical/s_physic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/signature/physical/s_physic.cpp.i
+.PHONY : src/signature/physical/s_physic.cpp.i
+
+src/signature/physical/s_physic.s: src/signature/physical/s_physic.cpp.s
+.PHONY : src/signature/physical/s_physic.s
+
+# target to generate assembly for a file
+src/signature/physical/s_physic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lingshui_window.dir/build.make CMakeFiles/lingshui_window.dir/src/signature/physical/s_physic.cpp.s
+.PHONY : src/signature/physical/s_physic.cpp.s
+
 src/signature/s_life.o: src/signature/s_life.cpp.o
 .PHONY : src/signature/s_life.o
 
@@ -583,6 +631,12 @@ help:
 	@echo "... src/nodes/2d/uni/uni_wear.o"
 	@echo "... src/nodes/2d/uni/uni_wear.i"
 	@echo "... src/nodes/2d/uni/uni_wear.s"
+	@echo "... src/signature/physical/s_movement.o"
+	@echo "... src/signature/physical/s_movement.i"
+	@echo "... src/signature/physical/s_movement.s"
+	@echo "... src/signature/physical/s_physic.o"
+	@echo "... src/signature/physical/s_physic.i"
+	@echo "... src/signature/physical/s_physic.s"
 	@echo "... src/signature/s_life.o"
 	@echo "... src/signature/s_life.i"
 	@echo "... src/signature/s_life.s"

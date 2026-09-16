@@ -177,5 +177,6 @@ CMakeFiles/lingshui_window.dir/src/singleton/st_system.cpp.o: \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_g_effect.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/dto/dto_s_movement.h \
  /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/signature/s_life.h \
- /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/signature/s_movement.h \
- /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/namespace/n_input.h
+ /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/signature/physical/s_physic.h \
+ /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/namespace/n_input.h \
+ /home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/include/signature/physical/s_movement.h

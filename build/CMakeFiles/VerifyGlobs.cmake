@@ -41,6 +41,8 @@ set(OLD_GLOB
   "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/render-type/rt_world.cpp"
   "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/uni/uni.cpp"
   "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/nodes/2d/uni/uni_wear.cpp"
+  "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/physical/s_movement.cpp"
+  "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/physical/s_physic.cpp"
   "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_life.cpp"
   "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_mesh.cpp"
   "/home/rizwarmcgovney/Documents/coding/work/mb-studio/lingshui/src/signature/s_movement.cpp"

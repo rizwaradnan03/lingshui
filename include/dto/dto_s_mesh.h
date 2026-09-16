@@ -22,6 +22,9 @@ struct DtoSubMesh {
     // PIXEL OF SCREEN VALUE !
     float w_pixel;
     float h_pixel;
+
+    bool is_collide = true;
+    bool available_direction[4];
     
     GLuint vertexShader;
     GLuint fragmentShader;
